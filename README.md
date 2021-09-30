@@ -1,70 +1,74 @@
-# Getting Started with Create React App
+# ARC(Animal Rescue Community)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Raising Hands For Injured Paws
 
-## Available Scripts
+ARC is a non-profit organization which helps orphan pets find their new homes and a family.
 
-In the project directory, you can run:
+<!-- TODO: conplete this section -->
+<!-- CodeWorkout was inspired by many great systems built by others, but aims to bring together the best from earlier forerunners while adding important new features.
 
-### `npm start`
+It provides comprehensive support for teachers who want to use coding exercises in their courses, while also maintaining flexibility for self-paced learners who aren't part of an organized course. -->
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Contents
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- [Clone this repository](#clone-this-repository)
+- [Contribution Guide](#contribution-guide)
+- [Installation Guide](#installation-guide)
+- [License](#license)
 
-### `npm test`
+## Clone this repository
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```bash
+using https:
+$ git clone https://github.com/arc-pune/arc-front-end.git
+$ cd arc-front-end
 
-### `npm run build`
+or
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+using ssh:
+$ git clone git@github.com:arc-pune/arc-front-end.git
+$ cd arc-front-end
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Make sure to create your branch
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Contribution Guide
 
-### `npm run eject`
+See [`CONTRIBUTING.md`](CONTRIBUTING.md) for more information on contributing to Brief-Me.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Installation Guide
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. Install Node version 14 or higher
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+To run the development server, do the following in the `arc-front-end` directory:
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+```bash
+$ npm install
+$ npm run dev
+```
 
-## Learn More
+You can now see the project running on your localhost
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+You can edit files on your text-editor, changes will be reflected in your browser.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Community
 
-### Code Splitting
+We also have public chat rooms on Discord. Drop by and say hello!
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+[![](https://img.shields.io/badge/chat-on_Discord-blue.svg?style=for-the-badge&logo=Discord)](https://discord.gg/CyDnCUEW)
 
-### Analyzing the Bundle Size
+## Support
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+If you have any feature requests or bug reports, please log them on the [issue tracker](https://github.com/arc-pune/arc-front-end/issues/new).
 
-### Making a Progressive Web App
+## License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+This project is licensed under the [MIT License](LICENSE).
 
-### Advanced Configuration
+## Primary maintainers
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+[Anand](https://github.com/AnandDhakane01)
 
-### Deployment
+[Kishore](https://github.com/majjikishore007)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+[Sahil](https://github.com/agarwalsahil0210)
