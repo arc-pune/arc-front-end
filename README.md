@@ -2,19 +2,21 @@
 
 ## Raising Hands For Injured Paws
 
-ARC is a non-profit organization which helps orphan pets find their new homes and a family.
+Animal Rescue Community (ARC) Pune is a group of college students raising hands for injured paws since 2020. We are a non-profit community organization of around 60 active volunteers, and many passive volunteers all over pune. 
 
-<!-- TODO: conplete this section -->
-<!-- CodeWorkout was inspired by many great systems built by others, but aims to bring together the best from earlier forerunners while adding important new features.
+Feeding, Rescue and Adoptions are our main domain of work. Our volunteers daily feed 500+ dogs and cats in their respective areas. Adoption is our prominent feature. We have been a part of 225+ successful adoptions till date. We also take rescue cases enthusiastically.
 
-It provides comprehensive support for teachers who want to use coding exercises in their courses, while also maintaining flexibility for self-paced learners who aren't part of an organized course. -->
+We believe in coexistence and work for reducing human-animal conflicts.
 
 ## Contents
 
 - [Clone this repository](#clone-this-repository)
 - [Contribution Guide](#contribution-guide)
 - [Installation Guide](#installation-guide)
+- [Community](#community)
+- [Support](#support)
 - [License](#license)
+- [Primary Maintainers](#primary-maintainers)
 
 ## Clone this repository
 
@@ -53,7 +55,7 @@ You can edit files on your text-editor, changes will be reflected in your browse
 
 ## Community
 
-We also have public chat rooms on Discord. Drop by and say hello!
+We also have public chat rooms on Discord. Feel free to connect!
 
 [![](https://img.shields.io/badge/chat-on_Discord-blue.svg?style=for-the-badge&logo=Discord)](https://discord.gg/CyDnCUEW)
 
