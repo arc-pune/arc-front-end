@@ -34,7 +34,7 @@ Make sure to create your branch
 
 ## Contribution Guide
 
-See [`CONTRIBUTING.md`](CONTRIBUTING.md) for more information on contributing to Brief-Me.
+See [`CONTRIBUTING.md`](CONTRIBUTING.md) for more information on contributing to ARC.
 
 ## Installation Guide
 
