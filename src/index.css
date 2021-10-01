@@ -2,3 +2,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+section {
+    padding: 0 2em;
+    margin-inline: auto;
+    width: 90%;
+}
