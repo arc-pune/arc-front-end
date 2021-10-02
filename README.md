@@ -76,6 +76,12 @@ You can now see the project running on your localhost
 
 You can edit files on your text-editor, changes will be reflected in your browser.
 
+## Docker Installation Guide (optional)
+```bash
+$ docker-compose build
+$ docker-compose run
+```
+
 ## Community
 
 We also have public chat rooms on Discord. Feel free to connect!
