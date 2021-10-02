@@ -4,11 +4,9 @@ import HomeMain from "../components/HomeMain";
 
 const Home = () => {
   return (
-    <div>
-       //nav bar 
+    <div className="bg-white dark:bg-gray-900">
       <NavBar></NavBar>
-      <HomeMain/>
-    
+      <HomeMain />
     </div>
   );
 };
