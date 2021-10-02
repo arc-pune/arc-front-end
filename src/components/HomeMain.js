@@ -26,7 +26,7 @@ const HomeMain = () => {
               the first ever animal welfare organization in the city.
             </p>
             <div class="p-2 w-full pt-8">
-              <button class="flex justify-center font-bold text-white dark:text-gray-900 bg-blue-600 dark:bg-gray-100 border-0 py-3 px-10 focus:outline-none rounded-lg text-lg hover:bg-blue-500 dark:hover:bg-white">
+              <button class="flex justify-center font-bold text-white bg-blue-600 border-0 py-3 px-10 focus:outline-none rounded-lg text-lg hover:bg-blue-500">
                 Explore
               </button>
             </div>
