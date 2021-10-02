@@ -78,8 +78,8 @@ You can edit files on your text-editor, changes will be reflected in your browse
 
 ## Docker Installation Guide (optional)
 ```bash
-$ docker-compose build
-$ docker-compose run
+$ npm run docker-build
+$ npm run docker-start
 ```
 
 ## Community
