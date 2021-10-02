@@ -6,6 +6,7 @@ WORKDIR /arc-front-end
 
 # add `/arc-front-end/node_modules/.bin` to $PATH
 ENV PATH /arc-front-end/node_modules/.bin:$PATH
+EXPOSE 3000
 
 # install arc-front-end dependencies
 COPY package.json ./
