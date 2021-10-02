@@ -18,6 +18,7 @@
   "scripts": {
     "start": "craco start",
     "build": "craco build",
+    "docker-build": "docker build -t dev .",
     "test": "craco test",
     "eject": "react-scripts eject"
   },
