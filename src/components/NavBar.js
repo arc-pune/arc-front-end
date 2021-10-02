@@ -31,18 +31,20 @@ export default function Example() {
                   )}
                 </Disclosure.Button>
               </div>
-              <div className="flex-shrink-0 flex items-center ">
-                <img
-                  className="block lg:hidden h-8 w-auto ml-14"
-                  src="/Assets/icons/logo.svg"
-                  alt="Workflow"
-                />
-                <img
-                  className="hidden lg:block h-8 w-auto"
-                  src="/Assets/icons/logo.svg"
-                  alt="Workflow"
-                />
-              </div>
+              <a href="/" >
+                  <div className="flex-shrink-0 flex items-center ">
+                    <img
+                      className="block lg:hidden h-8 w-auto ml-14"
+                      src="/Assets/icons/logo.svg"
+                      alt="Workflow"
+                    />
+                    <img
+                     className="hidden lg:block h-8 w-auto"
+                      src="/Assets/icons/logo.svg"
+                      alt="Workflow"
+                    />
+                  </div>
+              </a>
               <div className="flex-1 flex items-center justify-center ">
                 <div className="hidden sm:block sm:ml-6">
                   <div className="flex space-x-4">
@@ -52,7 +54,7 @@ export default function Example() {
                         href={item.href}
                         className={classNames(
                           item.current
-                            ? "text-black border-b-2 border-black"
+                            ? "text-black border-b-2 border-black hover:bg-gray-100"
                             : "text-gray-900",
                           "px-7 py-2 text-lg font-medium"
                         )}
@@ -66,13 +68,13 @@ export default function Example() {
               </div>
               <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
                 <div class="p-2 w-full">
-                  <button class="flex mx-auto border-0 py-2 px-8 focus:outline-none rounded-xl text-lg hover:bg-black hover:text-white">
-                    LogIn
+                  <button class="flex mx-auto border-0 font-medium py-2 px-8 focus:outline-none rounded-xl text-lg hover:underline">
+                    Sign in
                   </button>
                 </div>
 
                 <div class="p-2 w-full">
-                  <button class="flex mx-auto text-white bg-black border-0 py-2 px-8 focus:outline-none rounded-xl text-lg hover:bg-white hover:text-black">
+                  <button class="flex font-medium text-white bg-blue-600 border-0 py-2 px-8 focus:outline-none rounded-lg text-lg hover:bg-blue-500">
                     SignUp
                   </button>
                 </div>
