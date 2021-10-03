@@ -1,10 +1,14 @@
 import React from "react";
+import Gallery from "./components/Gallery";
 import Home from "./pages/Home";
 
 const App = () => {
   return (
     <div>
-      <Home></Home>
+       {/* <Gallery/> */}
+       <Home>
+         
+       </Home>
     </div>
   );
 };
