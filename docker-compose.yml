@@ -2,8 +2,7 @@ version: '3.7'
 
 services:
 
-  sample:
-    container_name: arc-frontend
+  arc-frontend:
     build:
       context: .
       dockerfile: Dockerfile
