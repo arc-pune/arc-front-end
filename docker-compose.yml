@@ -4,10 +4,11 @@ services:
 
   arc-frontend:
     build:
-      context: ../
-      dockerfile: ./docker/Dockerfile
+      context: .
+      dockerfile: Dockerfile
     volumes:
-      - '../:/arc-frontend'
+      - '.:/arc-frontend'
+      - '/arc-frontend/node_modules'
     ports:
       - 3000:3000
     environment:
