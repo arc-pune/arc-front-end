@@ -5,8 +5,10 @@ import HomeMain from "../components/HomeMain";
 const Home = () => {
   return (
     <div>
+       //nav bar 
       <NavBar></NavBar>
       <HomeMain/>
+    
     </div>
   );
 };
