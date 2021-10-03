@@ -1,6 +1,6 @@
 import React from "react";
 import MainContributor from "./MainContributorCard";
-import FounderCard from "./FounderCard";
+
 
 const AboutMain = () => {
   return (
