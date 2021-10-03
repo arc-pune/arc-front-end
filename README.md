@@ -75,6 +75,12 @@ You can edit files on your text-editor, changes will be reflected in your browse
 
 - Go to `Contributing.md`
 
+## Docker Installation Guide (optional)
+```bash
+$ npm run docker-build
+$ npm run docker-start
+```
+
 # Community
 
 We also have public chat rooms on Discord. Feel free to connect!
