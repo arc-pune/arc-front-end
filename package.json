@@ -18,8 +18,9 @@
   "scripts": {
     "start": "craco start",
     "build": "craco build",
-    "docker-build": "docker-compose build",
-    "docker-start": "docker-compose up",
+    "docker-build": "docker-compose -f docker/docker-compose.yml build",
+    "dockerize": "npm run docker-build && npm run docker-start",
+    "docker-start": "docker-compose -f docker/docker-compose.yml  up -d",
     "test": "craco test",
     "eject": "react-scripts eject"
   },
