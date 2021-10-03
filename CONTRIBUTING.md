@@ -1,35 +1,31 @@
 
+# Contributing to ARC-frontend
+We love your input! We want to make contributing to this project as easy and transparent as possible, whether it's:
 
-## Contribution Guide
+- Reporting a bug
+- Discussing the current state of the code
+- Submitting a fix
+- Proposing new features
+- Becoming a maintainer
 
+## Our Development Process
+We use GitHub to sync code to and from our internal repository. We'll use GitHub
+to track issues and feature requests, as well as accept pull requests.
 
-### Clone this repository
+## Pull Requests
+We actively welcome your pull requests.
 
-```bash
-using https:
-$ git clone https://github.com/arc-pune/arc-front-end.git
-$ cd arc-front-end
+```make sure to make your PR to the staging branch```
 
-or
+1. Fork the repo and create your branch from `master`.
+2. If you've added code that should be tested, then state about it in the PR description.
+3. If you've changed APIs, update the documentation (in the readme file at the moment).
+4. The PR title should begin with _<action>(<issue_number>): _ e.g. - "feat(#12): ", "chore(#12): ", "fix(#12): ", "refactor(#12):" and "test(#12):"
+5. Make sure your code satisfies the coding conventions used in the rest of the project.
 
-using ssh:
-$ git clone git@github.com:arc-pune/arc-front-end.git
-$ cd arc-front-end
-```
+## Issues
+We use GitHub issues to track public bugs. Please ensure your description is
+clear and has sufficient instructions to be able to reproduce the issue.
 
-If you like this project and want to support it, the easiest way is to give it a star.
-
-If you feel like you can do more. You can contribute to the project in different ways:
-
-By using it and spreading the word.
-Giving feedback by Discord.
-Requesting new features or submitting bugs.
-Voting for the features you want in the issue tracker (using reactions).
-And... Drum roll... Submitting code or documentation.
-To know what issues are currently open and be aware of the next features you can check the Project Board and the Organization Board at GitHub.
-
-You can ask any question, suggestion or complaint at the project's Discord server. 
-
-```Make sure to make your PR to the staging branch.```
-
-Thanks to all project's contributors!
+## License
+By contributing, you agree that your contributions will be licensed under its MIT License.
