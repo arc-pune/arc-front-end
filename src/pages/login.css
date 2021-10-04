@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.login {
+  display: flex;
+  flex-direction: row;
+}
+
+.section-1 {
+  background: #FAAF4F;
+  width: 30%;
+  height: 100vh;
+  
+}
+
+.section-2 {
+  background: #000;
+  width: 70%;
+  height: 100vh;
+  position: relative;
+}
+
+.section-2 .form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 50%; left: 50%; transform: translate(-50%, -50%);
+}
+
+.section-2 .form .form-control {
+  margin-bottom: 20px;
+}
+
+.section-2 .form .form-control label {
+  display: block;
+  color:#FFFFFF;
+  font-family: Roboto;
+  font-style: Regular;
+  font-size: 1.4rem;
+  line-height: 28.13px;
+  margin-bottom: 10px;
+}
+
+.section-2 .form .form-control input {
+  background: rgba(196, 196, 196, 0.44);
+  color: #BEB2B2;
+  border-radius: 5px;
+  font-size: 1.4rem;
+  border: none;
+  outline: none;
+  width: 766px;
+  padding: 15px;
+}
+
+.section-2 .form .button {
+  border: none;
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px;
+  font-family: Roboto;
+  color: #ffffff;
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+  border-radius: 15px;
+}
+
+.section-2 .form .buttons {
+  display: flex;
+  flex-direction: row;
+  margin-top: 30px;
+}
+
+.section-2 .form .buttons .signin {
+  background: #F64114;
+  width: 265px;
+}
+
+.section-2 .form .buttons .signup {
+  border: 1px solid #FFFFFF;
+  border-radius: 15px;
+  width: 265px;
+}
+
+.section-2 .form .or {
+  font-family: Roboto;
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px;
+  color: #FFFFFF;
+}
+
+.section-2 .form .google {
+  border: 1px solid #FFFFFF;
+  width: 332px;
+}
+
+.section-2 .form .google img {
+  width:30px; 
+  border-radius:50%;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+.section-2 .form .google p {
+  color:white; 
+}
+
+.section-1 {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.section-1 .content
+{
+  position: absolute;
+  top: 50%; left: 50%; transform: translate(-50%, -50%);
+}
+
+.section-1 .content .text {
+  font-family: Roboto;
+  font-size: 2.1rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 42px;
+  text-align: left;
+  width: 351px;
+}
+
+.section-1 .content .image {
+  width: 216px;
+  height: 149px;
+}
+
+

@@ -1,14 +1,21 @@
 import React from "react";
-import Gallery from "./components/Gallery";
 import Home from "./pages/Home";
+import Login from "./pages/login";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 const App = () => {
   return (
     <div>
-       {/* <Gallery/> */}
-       <Home>
-         
-       </Home>
+      <Router>
+        <Switch>
+          <Route exact path="/">
+            <Home />
+          </Route>
+          <Route exact path="/login">
+            <Login />
+          </Route>
+        </Switch>
+      </Router>
     </div>
   );
 };
