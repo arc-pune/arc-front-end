@@ -48,14 +48,15 @@ Basic requirements
 
 ```bash
 using https:
-$ git clone https://github.com/arc-pune/arc-frontend.git
-$ cd arc-backend
+$ git clone https://github.com/arc-pune/arc-front-end.git
+$ cd arc-front-end
 
 or
 
 using ssh:
-$ git clone git@github.com:arc-pune/arc-frontend.git
-$ cd arc-backend
+$ git clone git@github.com:arc-pune/arc-front-end.git
+$ cd arc-front-end
+
 ```
 
 - Creating  branch  
@@ -65,14 +66,14 @@ git checkout your-branch-name
 ```
 To run the development server, do the following in the `arc-frontend` directory:
 
-##Non-Docker Version
+## Non-Docker Version
 ```bash
 $ npm install
-$ npm run dev
+$ npm start
 ```
 It might take a while until craco is up and running.
 
-##Docker Version
+## Docker Version
 
 ```bash
 $ npm run install && npm dockerize
