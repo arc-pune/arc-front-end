@@ -1,9 +1,6 @@
 import React from "react";
 import styles from "./Card.module.css";
 
-import dog from "./images/dog.png";
-import location from "./images/location.png";
-
 function Cards() {
   return (
     <div className={styles.frame}>
@@ -11,10 +8,16 @@ function Cards() {
         <div className={styles.rectangle} />
         <div className={styles.layout}>
           <div>
-            <img src={dog} className={styles.imgs} />
+            <img
+              src="https://raw.githubusercontent.com/arc-pune/arc-front-end/staging/src/components/images/dog.png"
+              className={styles.imgs}
+            />
           </div>
           <span className={styles.lorem_ipsum}>{`Lorem Ipsum `}</span>
-          <img src={location} className={styles.location} />
+          <img
+            src="https://raw.githubusercontent.com/arc-pune/arc-front-end/staging/src/components/images/location.png"
+            className={styles.location}
+          />
           <span className={styles.text}>{`Lorem Ipsum is simply dummy text of 
 the printing and typesetting industry.
 Lorem Ipsum has been the industry's 
