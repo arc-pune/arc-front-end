@@ -10,13 +10,16 @@ We believe in coexistence and work for reducing human-animal conflicts.
 
 ## Contents
 
+- [ARC(Animal Rescue Community)](#arcanimal-rescue-community)
+  - [Raising Hands For Injured Paws](#raising-hands-for-injured-paws)
+  - [Contents](#contents)
 - [Stack](#stack)
-- [Setup Guide](#setup-Guide)
-- [Contribution Guide](#contribution-guide)
+- [Setup Guide](#setup-guide)
+- [Contributing Guide](#contributing-guide)
 - [Community](#community)
-- [support](#support)
+- [Support](#support)
 - [License](#license)
-- [Primary Maintainers](#primary-maintainers)
+- [Primary maintainers](#primary-maintainers)
 
 # Stack
 | Stack    | Technology |
@@ -45,13 +48,13 @@ Basic requirements
 
 ```bash
 using https:
-$ git clone https://github.com/arc-pune/arc-backend.git
+$ git clone https://github.com/arc-pune/arc-frontend.git
 $ cd arc-backend
 
 or
 
 using ssh:
-$ git clone git@github.com:arc-pune/arc-backend.git
+$ git clone git@github.com:arc-pune/arc-frontend.git
 $ cd arc-backend
 ```
 
