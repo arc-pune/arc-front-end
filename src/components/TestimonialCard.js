@@ -6,23 +6,12 @@ export const TestimonialCard = (props) => {
   return (
     <div className="my-10 mx-auto">
       <div
-        className="relative rounded-3xl"
+        className="relative rounded-3xl w-full md:w-auto md:m-10"
         style={{
-          height: "38rem",
-          width: "30rem",
           backgroundColor: "#FAAF4F",
         }}
       >
-        {/* quote icon */}
-        <img
-          className="absolute"
-          src="/Assets/icons/quote.svg"
-          style={{
-            left: "45px",
-            bottom: "580px",
-          }}
-          alt="Quote icon"
-        ></img>
+
 
         {/* image */}
         <div className="flex ">
@@ -36,8 +25,17 @@ export const TestimonialCard = (props) => {
         {/* Heading and text */}
         <div className="flex flex-col mt-5">
           <h2 className="font-sans font-bold text-2xl px-12">{props.name}</h2>
+          <img
+          className="absolute"
+          src="/Assets/icons/quote.svg"
+          style={{
+            width: "3rem",
+          }}
+          alt="Quote icon"
+        ></img>
           <p className="font-sans font-medium text-black px-12 pt-5">
             {/* {props.text} */}
+            {/* quote icon */}
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras quis
             mollis ligula. Donec convallis lacinia suscipit. Morbi sit amet orci
             posuere, rhoncus odio egestas, gravida neque. Donec vel dui dui.

@@ -10,13 +10,16 @@ We believe in coexistence and work for reducing human-animal conflicts.
 
 ## Contents
 
+- [ARC(Animal Rescue Community)](#arcanimal-rescue-community)
+  - [Raising Hands For Injured Paws](#raising-hands-for-injured-paws)
+  - [Contents](#contents)
 - [Stack](#stack)
-- [Setup Guide](#setup-Guide)
-- [Contribution Guide](#contribution-guide)
+- [Setup Guide](#setup-guide)
+- [Contributing Guide](#contributing-guide)
 - [Community](#community)
-- [support](#support)
+- [Support](#support)
 - [License](#license)
-- [Primary Maintainers](#primary-maintainers)
+- [Primary maintainers](#primary-maintainers)
 
 # Stack
 | Stack    | Technology |
@@ -45,14 +48,15 @@ Basic requirements
 
 ```bash
 using https:
-$ git clone https://github.com/arc-pune/arc-backend.git
-$ cd arc-backend
+$ git clone https://github.com/arc-pune/arc-front-end.git
+$ cd arc-front-end
 
 or
 
 using ssh:
-$ git clone git@github.com:arc-pune/arc-backend.git
-$ cd arc-backend
+$ git clone git@github.com:arc-pune/arc-front-end.git
+$ cd arc-front-end
+
 ```
 
 - Creating  branch  
@@ -62,14 +66,14 @@ git checkout your-branch-name
 ```
 To run the development server, do the following in the `arc-frontend` directory:
 
-##Non-Docker Version
+## Non-Docker Version
 ```bash
 $ npm install
-$ npm run dev
+$ npm start
 ```
 It might take a while until craco is up and running.
 
-##Docker Version
+## Docker Version
 
 ```bash
 $ npm run install && npm dockerize
