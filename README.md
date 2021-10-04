@@ -62,14 +62,14 @@ git checkout your-branch-name
 ```
 To run the development server, do the following in the `arc-frontend` directory:
 
-##Non-Docker Version
+## Non-Docker Version
 ```bash
 $ npm install
 $ npm start
 ```
 It might take a while until craco is up and running.
 
-##Docker Version
+## Docker Version
 
 ```bash
 $ npm run install && npm dockerize
