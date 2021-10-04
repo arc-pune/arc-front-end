@@ -1,13 +1,13 @@
 .frame {
   display: flex;
   width: 420px;
-  height: 520px;
+  height: 50px;
   flex-direction: column;
 }
 .cards {
   position: relative;
-  width: 460px;
-  height: 620px;
+  width: 350px;
+  height: 550px;
 }
 .rectangle {
   display: flex;
@@ -16,8 +16,8 @@
   left: 0px;
   background-color: rgba(250, 175, 79, 1);
   border-radius: 25px;
-  width: 460px;
-  height: 625px;
+  width: 320px;
+  height: 428px;
 }
 .layout {
   display: flex;
@@ -28,8 +28,8 @@
 .imgs {
   display: flex;
   border-radius: 25px 25px 0px 0px;
-  width: 460px;
-  height: 432px;
+  width: 320px;
+  height: 250px;
   margin-bottom: 14px;
 }
 .location {
@@ -45,10 +45,10 @@
 
 .text {
   color: rgba(0, 0, 0, 1);
-  font-size: 23px;
+  font-size: 18px;
   font-family: "Roboto";
   font-style: italic;
-  font-weight: 300;
+  font-weight: 200;
   letter-spacing: 0em;
   text-align: left;
   white-space: pre-wrap;
@@ -57,7 +57,7 @@
 
 .lorem_ipsum {
   position: absolute;
-  top: 452px;
+  top: 265px;
   left: 55px;
   color: rgba(0, 0, 0, 1);
   font-size: 24px;
