@@ -56,7 +56,6 @@ or
 using ssh:
 $ git clone git@github.com:arc-pune/arc-front-end.git
 $ cd arc-front-end
-
 ```
 
 - Creating  branch  
