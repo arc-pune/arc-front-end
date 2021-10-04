@@ -65,7 +65,7 @@ To run the development server, do the following in the `arc-frontend` directory:
 ##Non-Docker Version
 ```bash
 $ npm install
-$ npm run dev
+$ npm start
 ```
 It might take a while until craco is up and running.
 
