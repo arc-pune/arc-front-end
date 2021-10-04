@@ -1,6 +1,7 @@
 import React from "react";
 import "./login.css";
 import NavBar from "../components/NavBar";
+import { Link } from "react-router-dom";
 
 const Login = () => {
   return (
@@ -17,6 +18,17 @@ const Login = () => {
       </div>
       <div class="section-2">
         <form class="form">
+          <div class="google button">
+            <p>
+              <img
+                src="/Assets/images/google.png"
+                alt="google"
+                className="inline"
+              />
+              Continue with google
+            </p>
+          </div>
+          <p class="or">OR</p>
           <div class="form-control">
             <label for="email">Email</label>
             <input
@@ -31,18 +43,9 @@ const Login = () => {
           </div>
           <div class="buttons">
             <p class="signin button">Login</p>
-            <p class="signup button">New User? Sign up</p>
           </div>
-          <p class="or">OR</p>
-          <div class="google button">
-            <p>
-              <img
-                src="/Assets/images/google.png"
-                alt="google"
-                className="inline"
-              />
-              continue with google
-            </p>
+          <div>
+            <p class="signup button"><Link to="/signup">New User? Sign up</Link></p>
           </div>
         </form>
       </div>
