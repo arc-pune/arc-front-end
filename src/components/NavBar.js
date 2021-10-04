@@ -2,6 +2,7 @@
 import { Fragment } from "react";
 import { Disclosure, Menu, Transition } from "@headlessui/react";
 import { BellIcon, MenuIcon, XIcon } from "@heroicons/react/outline";
+import { Link } from "react-router-dom";
 
 const navigation = [
   { name: "Home", href: "#", current: true },
@@ -31,19 +32,19 @@ export default function Example() {
                   )}
                 </Disclosure.Button>
               </div>
-              <a href="/" >
-                  <div className="flex-shrink-0 flex items-center ">
-                    <img
-                      className="block lg:hidden h-8 w-auto ml-14"
-                      src="/Assets/icons/logo.svg"
-                      alt="Workflow"
-                    />
-                    <img
-                     className="hidden lg:block h-8 w-auto"
-                      src="/Assets/icons/logo.svg"
-                      alt="Workflow"
-                    />
-                  </div>
+              <a href="/">
+                <div className="flex-shrink-0 flex items-center ">
+                  <img
+                    className="block lg:hidden h-8 w-auto ml-14"
+                    src="/Assets/icons/logo.svg"
+                    alt="Workflow"
+                  />
+                  <img
+                    className="hidden lg:block h-8 w-auto"
+                    src="/Assets/icons/logo.svg"
+                    alt="Workflow"
+                  />
+                </div>
               </a>
               <div className="flex-1 flex items-center justify-center ">
                 <div className="hidden sm:block sm:ml-6">
@@ -69,7 +70,7 @@ export default function Example() {
               <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
                 <div class="p-2 w-full">
                   <button class="flex mx-auto border-0 font-medium py-2 px-8 focus:outline-none rounded-xl text-lg hover:underline">
-                    Sign in
+                    <Link to="/login">LogIn</Link>
                   </button>
                 </div>
 
