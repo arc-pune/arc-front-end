@@ -4,7 +4,7 @@ import NavBar from "../components/NavBar";
 
 const Login = () => {
   return (
-    <div class="login">
+    <div class="login  ">
       <div class="section-1">
         <div class="content">
           <div class="image">
@@ -15,8 +15,8 @@ const Login = () => {
           </div>
         </div>
       </div>
-      <div class="section-2">
-        <form class="form">
+      <div class="section-2 ">
+        <form class="form ">
           <div class="form-control">
             <label for="email">Email</label>
             <input
@@ -29,8 +29,8 @@ const Login = () => {
             <label for="password">Password</label>
             <input type="password" id="password" placeholder="Password"></input>
           </div>
-          <div class="buttons">
-            <p class="signin button">Login</p>
+          <div class="buttons flex  lg:flex-row">
+            <p class="signin button sm:w-2 ">Login</p>
             <p class="signup button">New User? Sign up</p>
           </div>
           <p class="or">OR</p>
