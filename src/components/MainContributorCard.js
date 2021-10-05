@@ -10,7 +10,7 @@ const MainContributor = (Props) => {
         style={{
           width: "15.5rem",
           bottom: "140px",
-          right: "35px",
+          right: "31px",
         }}
       />
       <div className=" w-64 h-72 bg-white  box-border border-solid border-black border-2  rounded-2xl ">

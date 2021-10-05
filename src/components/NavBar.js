@@ -5,9 +5,9 @@ import { BellIcon, MenuIcon, XIcon } from "@heroicons/react/outline";
 import { Link } from "react-router-dom";
 
 const navigation = [
-  { name: "Home", href: "#", current: true },
+  { name: "Home", href: "/", current: false },
   { name: "Adopt", href: "#", current: false },
-  { name: "About", href: "#", current: false },
+  { name: "About", href: "/about", current: false },
 ];
 
 function classNames(...classes) {
@@ -50,9 +50,9 @@ export default function Example() {
                 <div className="hidden sm:block sm:ml-6">
                   <div className="flex space-x-4">
                     {navigation.map((item) => (
-                      <a
+                      <Link
                         key={item.name}
-                        href={item.href}
+                        to={item.href}
                         className={classNames(
                           item.current
                             ? "text-black border-b-2 border-black hover:bg-gray-100"
@@ -62,7 +62,7 @@ export default function Example() {
                         aria-current={item.current ? "page" : undefined}
                       >
                         {item.name}
-                      </a>
+                      </Link>
                     ))}
                   </div>
                 </div>
