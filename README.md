@@ -1,6 +1,9 @@
 # ARC(Animal Rescue Community)
 
-## Raising Hands For Injured Paws
+## Raising Hands For Injured Pawd
+
+[![made-with-javascript](https://img.shields.io/badge/Made%20with-JavaScript-1f425f.svg)](https://www.javascript.com)
+
 
 Animal Rescue Community (ARC) Pune is a group of college students raising hands for injured paws since 2020. We are a non-profit community organization of around 60 active volunteers, and many passive volunteers all over pune. 
 
