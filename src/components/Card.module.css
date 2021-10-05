@@ -1,0 +1,70 @@
+.frame {
+  display: flex;
+  width: 420px;
+  height: 50px;
+  flex-direction: column;
+}
+.cards {
+  position: relative;
+  width: 350px;
+  height: 550px;
+}
+.rectangle {
+  display: flex;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-color: rgba(250, 175, 79, 1);
+  border-radius: 25px;
+  width: 320px;
+  height: 428px;
+}
+.layout {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  gap: 6px;
+}
+.imgs {
+  display: flex;
+  border-radius: 25px 25px 0px 0px;
+  width: 320px;
+  height: 250px;
+  margin-bottom: 14px;
+}
+.location {
+  overflow: hidden;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  flex-direction: column;
+  padding: 3.9983739852905273px 3.9991068840026855px 3.9983739852905273px
+    3.9998669624328613px;
+  margin-left: 20px;
+}
+
+.text {
+  color: rgba(0, 0, 0, 1);
+  font-size: 18px;
+  font-family: "Roboto";
+  font-style: italic;
+  font-weight: 200;
+  letter-spacing: 0em;
+  text-align: left;
+  white-space: pre-wrap;
+  margin-left: 28px;
+}
+
+.lorem_ipsum {
+  position: absolute;
+  top: 265px;
+  left: 55px;
+  color: rgba(0, 0, 0, 1);
+  font-size: 24px;
+  font-family: "Roboto";
+  font-weight: 700;
+  letter-spacing: 0em;
+  text-align: left;
+  width: 184px;
+  height: 25px;
+}
