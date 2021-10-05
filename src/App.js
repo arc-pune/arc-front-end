@@ -11,9 +11,6 @@ const App = () => {
           <Route exact path="/">
             <Home />
           </Route>
-          <Route exact path="/login">
-            <Login />
-          </Route>
         </Switch>
       </Router>
     </div>
