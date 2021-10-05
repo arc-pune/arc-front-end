@@ -1,6 +1,5 @@
 import React from "react";
 import Home from "./pages/Home";
-import Login from "./pages/login";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import About from "./pages/About";
 
@@ -11,9 +10,6 @@ const App = () => {
         <Switch>
           <Route exact path="/">
             <Home />
-          </Route>
-          <Route exact path="/login">
-            <Login />
           </Route>
           <Route exact path="/about">
             <About />
