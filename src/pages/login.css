@@ -4,12 +4,6 @@
   box-sizing: border-box;
 }
 
-.cancel{
-  font-size: 40px;
-  margin-top:-2em;
-  float:right;
-  color:white;
-}
 .login {
   display: flex;
   flex-direction: row;
@@ -18,14 +12,14 @@
 .section-1 {
   background: #FAAF4F;
   width: 30%;
-  /*height: 100vh;*/
+  height: 100vh;
   
 }
 
 .section-2 {
   background: #000;
   width: 70%;
-  height: 80vh;
+  height: 100vh;
   position: relative;
 }
 
