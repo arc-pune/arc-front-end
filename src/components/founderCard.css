@@ -1,0 +1,573 @@
+    /* For mobile phones: */
+ /*Founder Header*/
+
+    .ourFounderSection{
+        height:10rem;
+        position: relative;
+            width:100%;
+            justify-content: center;
+            align-items:center;
+            margin: auto;
+        }
+        .ourFounderSection__PawsImg{
+        position: absolute;
+        height:4rem;
+
+        width: 4rem;
+        Top:56%;
+        left: 7%;
+
+
+        }
+        .ourFounderSection__title {
+            background: #FAAF4F;
+        border: 1px solid #000000;
+        box-sizing: border-box;
+    
+        box-shadow: 10px 10px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 15px;
+        width:10.5rem;
+        height:3rem;
+        text-align: center;
+        position:absolute;
+        top: 8.5rem;
+       
+        margin: 0 4rem;
+        justify-content:center !important;
+        justify-items: center;
+        
+        padding: 1rem;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 14px;
+        }
+/* Founder Card Main Body */
+    .founderCard{
+
+        background: #FFFEFE;
+    border: 2px solid #000000;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+    margin: auto ;
+    display: grid; 
+    grid-template-columns:1fr;
+    height:32rem;
+    width:15rem;
+
+    }
+  
+    .founderCard__img{
+        background: #FFFEFE;
+    
+        margin:2.5rem auto 1rem auto;
+        
+        border: 1px solid #000000;
+    box-sizing: border-box;
+    border-radius: 15px;
+    justify-content: center;
+    object-fit: cover;
+    align-items: center;
+    width: 12rem;
+  
+    height: 12rem; 
+    }
+    
+   .founderCard__text{
+    justify-content:center;
+    margin: 1rem auto;
+    padding: 1rem;
+    font-style: normal;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+width: 15rem;
+
+    color: #000000;
+
+   }
+
+
+
+
+
+  @media only screen and (min-width: 600px) {
+     /* For tablets: 
+   */
+
+ /*Founder Header*/
+ .ourFounderSection{
+    height:10rem;
+    position: relative;
+        width:100%;
+        justify-content: center;
+        align-items:center;
+        margin: auto;
+    }
+ .ourFounderSection__title {
+    background: #FAAF4F;
+border: 1px solid #000000;
+box-sizing: border-box;
+
+box-shadow: 10px 10px 4px rgba(0, 0, 0, 0.25);
+border-radius: 15px;
+width:10.5rem;
+height:3rem;
+text-align: center;
+position:absolute;
+top: 8.5rem;
+
+margin:auto;
+justify-content:center !important;
+justify-items: center;
+left:auto;
+right: 35%;
+padding: 1rem;
+font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 14px;
+line-height: 14px;
+}
+.ourFounderSection__PawsImg{
+    position: absolute;
+    height:6rem;
+
+    width: 4rem;
+    Top:65%;
+    left: 30%;
+
+
+    }
+/* Founder Card Main Body */
+.founderCard{
+
+background: #FFFEFE;
+border: 2px solid #000000;
+box-sizing: border-box;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 15px;
+margin: auto ;
+display: grid; 
+grid-template-columns:1fr;
+height:32rem;
+width:20rem;
+
+}
+
+
+
+
+
+
+   
+  }
+  
+  @media only screen and (min-width: 930px) {
+    /* For desktop: */
+    /*founder header*/
+
+
+    .ourFounderSection{
+        height:10rem;
+        position: relative;
+            width:100%;
+            justify-content: center;
+            align-items:center;
+            margin: 4rem;
+        }
+
+        .ourFounderSection__PawsImg{
+            position: absolute;
+            height:8rem;
+        
+            width: 8rem;
+            Top:65%;
+            left: 17%;
+        
+        
+            }
+        .ourFounderSection__title {
+            background: #FAAF4F;
+        border: 1px solid #000000;
+        box-sizing: border-box;
+        padding:0.5rem;
+        box-shadow: 10px 10px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 15px;
+        width:35%;
+        height:5rem;
+        text-align: center;
+        position:absolute;
+        bottom: -6rem;
+        left: 18rem;
+        padding: 1.5rem;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 30px;
+        line-height: 21px;
+        }
+        /*Main Body*/
+    .founderCard{
+
+        background: #FFFEFE;
+    border: 2px solid #000000;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+    margin:auto;
+    display: grid; 
+    grid-template-columns: 1.4fr 1.5fr;
+    
+    height:100%;
+    width: 60%;
+    max-width: 60%;
+    }
+    
+    .founderCard__img{
+        border: 1px solid #000000;
+    box-sizing: border-box;
+    border-radius: 15px;
+    justify-content: flex-start;
+    object-fit: cover;
+    align-items: flex-start;
+    width: 20rem;
+    margin: 0;
+    background: #FFFEFE;
+    height: 34.5rem;
+    
+    }
+    
+    
+    .founderCard__text{
+        justify-content:center;
+    margin-top:auto;
+    margin-bottom:auto;
+    margin-right: 2rem;
+    margin-left: 1rem;
+      flex:1;
+    padding:1rem auto;
+        text-align:justify;
+        font-style: normal;
+    max-width: 100%;
+    height: 30rem;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 1.6rem;
+        line-height: 26px;
+        color: #000000;
+       
+    
+       }
+      
+    
+  }
+
+
+  /* Wide Monitor 1200-1570 */
+  @media only screen and (min-width: 1024px) {
+
+
+
+     /*founder header*/
+
+
+    .ourFounderSection{
+        height:10rem;
+        position: relative;
+            width:100%;
+            justify-content: center;
+            align-items:center;
+            margin: auto;
+        }
+
+        .ourFounderSection__PawsImg{
+            position: absolute;
+            height:8rem;
+        
+            width: 8rem;
+            Top:45%;
+            left: 22%;
+        
+        
+            }
+        .ourFounderSection__title {
+            background: #FAAF4F;
+        border: 1px solid #000000;
+        box-sizing: border-box;
+        padding:0.5rem;
+        box-shadow: 10px 10px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 15px;
+        width:35%;
+        height:5rem;
+        text-align: center;
+        position:absolute;
+        top: 10.5rem;
+        left: 27%;
+        padding: 1.5rem;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 30px;
+        line-height: 21px;
+        }
+        /*Main Body*/
+    .founderCard{
+
+        background: #FFFEFE;
+    border: 2px solid #000000;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+    margin:4% auto;
+    display: grid; 
+    grid-template-columns: 1.4fr 1.5fr;
+    
+    height:100%;
+    width: 70%;
+    max-width: 70%;
+    }
+    
+    .founderCard__img{
+        border: 1px solid #000000;
+    box-sizing: border-box;
+    border-radius: 15px;
+    justify-content: flex-start;
+    object-fit: cover;
+    align-items: flex-start;
+    width: 22rem;
+    margin: 0;
+    background: #f7f7f7;
+    height: 32.5rem;
+    
+    }
+    
+    
+    .founderCard__text{
+        justify-content:flex-start;
+    margin:2.5rem 0.1rem; ;
+ 
+      flex:0.5;
+    padding:2rem auto;
+        text-align:justify;
+        font-style: normal;
+        width:20rem;
+    max-width: 100%;
+    height: 27rem;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 2rem;
+        line-height: 29px;
+        color: #000000;
+       
+    
+       }
+      
+    
+  }
+
+
+  @media only screen and (min-width: 1600px) {
+
+
+
+    /*founder header*/
+
+
+   .ourFounderSection{
+       height:10rem;
+       position: relative;
+           width:100%;
+           justify-content: center;
+           align-items:center;
+           margin: auto;
+       }
+
+       .ourFounderSection__PawsImg{
+           position: absolute;
+           height:8rem;
+       
+           width: 8rem;
+           Top:47%;
+           left: 23%;
+       
+       
+           }
+       .ourFounderSection__title {
+           background: #FAAF4F;
+       border: 1px solid #000000;
+       box-sizing: border-box;
+       padding:0.5rem;
+       box-shadow: 10px 10px 4px rgba(0, 0, 0, 0.25);
+       border-radius: 15px;
+       width:32%;
+       height:5rem;
+       text-align: center;
+       position:absolute;
+       top: 12.5rem;
+       left: 25.5rem;
+       padding: 1.5rem;
+       font-family: Roboto;
+       font-style: normal;
+       font-weight: bold;
+       font-size: 30px;
+       line-height: 21px;
+       }
+       /*Main Body*/
+   .founderCard{
+
+       background: #FFFEFE;
+   border: 2px solid #000000;
+   box-sizing: border-box;
+   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+   border-radius: 15px;
+   margin:4% auto;
+   display: grid; 
+   grid-template-columns: 2.5fr 2.5fr;
+   
+   height:100%;
+   width: 80rem;
+   max-width: 65%;
+   }
+   
+   .founderCard__img{
+       border: 1px solid #000000;
+   box-sizing: border-box;
+   border-radius: 15px;
+   justify-content: flex-start;
+   object-fit: cover;
+   align-items: flex-start;
+   width: 26rem;
+   margin: 0;
+   background: #FFFEFE;
+   height: 38.5rem;
+   
+   }
+   
+   
+   .founderCard__text{
+       justify-content:center;
+   margin:4.5rem 4rem;
+  
+     flex:1;
+   padding:4rem auto;
+       text-align:justify;
+       font-style: normal;
+       width:32rem;
+   max-width: 100%;
+   height: 28rem;
+       font-family: Roboto;
+       font-style: normal;
+       font-weight: normal;
+       font-size: 2rem;
+       line-height: 35px;
+       color: #000000;
+      
+   
+      }
+     
+   
+ }
+ @media only screen and (min-width: 1800px) {
+/*founder header*/
+
+
+.ourFounderSection{
+    height:10rem;
+    position: relative;
+        width:100%;
+        justify-content: center;
+        align-items:center;
+        margin: auto;
+    }
+
+    .ourFounderSection__PawsImg{
+        position: absolute;
+        height:8rem;
+    
+        width: 8rem;
+        Top:47%;
+        left: 28%;
+    
+    
+        }
+    .ourFounderSection__title {
+        background: #FAAF4F;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    padding:0.5rem;
+    box-shadow: 10px 10px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+    width:32%;
+    height:7rem;
+    text-align: center;
+    position:absolute;
+    top: 14.5rem;
+    left: 30%;
+    padding: 2.4rem;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size:3.5rem;
+    line-height: 21px;
+    }
+    /*Main Body*/
+.founderCard{
+
+    background: #FFFEFE;
+border: 2px solid #000000;
+box-sizing: border-box;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 15px;
+margin:4% auto;
+display: grid; 
+grid-template-columns: 2.5fr 2.5fr;
+
+height:100%;
+width: 80rem;
+max-width: 65%;
+}
+
+.founderCard__img{
+    border: 1px solid #000000;
+box-sizing: border-box;
+border-radius: 15px;
+justify-content: flex-start;
+object-fit: cover;
+align-items: flex-start;
+width: 40rem;
+margin: 0;
+background: #FFFEFE;
+height: 48.5rem;
+
+}
+
+
+.founderCard__text{
+    justify-content:center;
+margin:4.5rem 4rem;
+
+  flex:1;
+padding:4rem auto;
+    text-align:justify;
+    font-style: normal;
+    width:32rem;
+max-width: 100%;
+height: 28rem;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2.5rem;
+    line-height: 45px;
+    color: #000000;
+   
+
+   }
+ }
