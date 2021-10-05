@@ -2,7 +2,7 @@
 import { Fragment } from "react";
 import { Disclosure, Menu, Transition } from "@headlessui/react";
 import { BellIcon, MenuIcon, XIcon } from "@heroicons/react/outline";
-import PaletteThemeChanger from "./PaletteThemeChanger";
+import { Link } from "react-router-dom";
 
 const navigation = [
   { name: "Home", href: "#", current: true },
@@ -69,8 +69,8 @@ export default function Example() {
               </div>
               <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
                 <div class="p-2 w-full">
-                  <button class="flex mx-auto border-0 font-medium py-2 px-8 focus:outline-none rounded-xl text-lg hover:underline text:black dark:text-white">
-                    Sign in
+                  <button class="flex mx-auto border-0 font-medium py-2 px-8 focus:outline-none rounded-xl text-lg hover:underline">
+                    <Link to="/login">LogIn</Link>
                   </button>
                 </div>
 
