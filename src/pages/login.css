@@ -6,19 +6,45 @@
 
 .login {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+}
+
+@media (min-width: 1050px) {
+  .login {
+    flex-direction: row;
+  }
+
+  .section-1 {
+    width: 35em;
+    height: 100%;
+  }
+  .section-2 {
+    width: 70%;
+  }
+  .section-2 .form .buttons {
+    flex-direction: row;
+  }
+  .section-2 .form .buttons .signin {
+    width: 15em;
+  }
+  .section-2 .form .buttons .signup {
+    width: 15em;
+  }
+  .section-2 .form .form-control input {
+    width: 45em;
+  }
 }
 
 .section-1 {
-  background: #FAAF4F;
-  width: 30%;
+  background: #faaf4f;
+  /* width: 100%; */
   height: 100vh;
-  
+  padding-left: 20px;
 }
 
 .section-2 {
   background: #000;
-  width: 70%;
+  /* width: 100%; */
   height: 100vh;
   position: relative;
 }
@@ -28,7 +54,9 @@
   flex-direction: column;
   align-items: center;
   position: absolute;
-  top: 50%; left: 50%; transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .section-2 .form .form-control {
@@ -37,7 +65,7 @@
 
 .section-2 .form .form-control label {
   display: block;
-  color:#FFFFFF;
+  color: #ffffff;
   font-family: Roboto;
   font-style: Regular;
   font-size: 1.4rem;
@@ -47,13 +75,15 @@
 
 .section-2 .form .form-control input {
   background: rgba(196, 196, 196, 0.44);
-  color: #BEB2B2;
+  color: #beb2b2;
   border-radius: 5px;
   font-size: 1.4rem;
   border: none;
   outline: none;
-  width: 766px;
+  /* width: 46em; */
+  margin-inline: auto;
   padding: 15px;
+  /* width: 90%; */
 }
 
 .section-2 .form .button {
@@ -71,20 +101,20 @@
 }
 
 .section-2 .form .buttons {
-  display: flex;
-  flex-direction: row;
+  /* display: flex;
+  flex-direction: column; */
   margin-top: 30px;
 }
 
 .section-2 .form .buttons .signin {
-  background: #F64114;
-  width: 265px;
+  background: #f64114;
+  /* width: 15em; */
 }
 
 .section-2 .form .buttons .signup {
-  border: 1px solid #FFFFFF;
+  border: 1px solid #ffffff;
   border-radius: 15px;
-  width: 265px;
+  /* width: 15em; */
 }
 
 .section-2 .form .or {
@@ -93,23 +123,23 @@
   font-style: normal;
   font-weight: 500;
   line-height: 28px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .section-2 .form .google {
-  border: 1px solid #FFFFFF;
+  border: 1px solid #ffffff;
   width: 332px;
 }
 
 .section-2 .form .google img {
-  width:30px; 
-  border-radius:50%;
+  width: 30px;
+  border-radius: 50%;
   vertical-align: middle;
   margin-right: 10px;
 }
 
 .section-2 .form .google p {
-  color:white; 
+  color: white;
 }
 
 .section-1 {
@@ -118,10 +148,11 @@
   position: relative;
 }
 
-.section-1 .content
-{
+.section-1 .content {
   position: absolute;
-  top: 50%; left: 50%; transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .section-1 .content .text {
@@ -138,5 +169,3 @@
   width: 216px;
   height: 149px;
 }
-
-
