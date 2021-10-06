@@ -3,6 +3,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+.loginmain{
+  /*max-height:600px;*/
+}
 .cancel{
   font-size: 40px;
   margin-top:-2em;
@@ -11,46 +14,99 @@
 }
 .login {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  position:relative;
 }
 
-@media (min-width: 1050px ) {
+@media only screen and (max-width: 500px ) {
   .login {
-    flex-direction: row;
-    }
-
+    flex-direction: column;
+    /*top: 50%;
+    left:50%;*/
+    transform: translate(15%,5%);
+    max-height:80vh;
+    width:100vw;
+  }
   .section-1 {
-    width: 35em;
-    height: 100%;
+    position:relative;
+    min-height: 120px;
+    max-height: 25vh;
+    min-width:60vw;
+    max-width:61vw;
+    /*display:flex;
+    flex-direction: column;*/
+    
   }
   .section-2 {
-    width: 70%;
+    /*width: 50%;*/
+    max-width: 60vw;
+    max-height:60vmax;
   }
-  .section-2 .form .buttons {
-    flex-direction: row;
+  .form-control{
+    max-height:7vh;
   }
-  .section-2 .form .buttons .signin {
-    width: 15em;
+  .buttonparent{
+    margin-top: -5vmin;
   }
-  .section-2 .form .buttons .signup {
-    width: 15em;
+  .section-1 .content .image {
+    position:absolute;
+    width: 50%;
+    max-height: 60%;
+    /*top:-150%;*/
+    left:15%;
+    transform: translateY(-25vmin);
+    /*margin: 10%;*/
   }
-  .section-2 .form .form-control input {
-    width: 45em;
+  .section-1 .content .text {
+    position:absolute;
+    transform: translateY(3vmin);
+    left:0%;
   }
 }
 
 .section-1 {
   background: #faaf4f;
-  /* width: 100%; */
-  height: 80vh;
-  padding-left: 20px;
+  height: 83vh;
+  padding: 20px;
+  width: 45%;
+  max-width:400px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
 }
+
+
+.section-1 .content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+}
+
+.section-1 .content .text {
+  font-family: Roboto;
+   font-size: 3.5vmin;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 5.5vmin;
+  text-align: left;
+  width: 100%;
+  text-align: center;
+}
+
+.section-1 .content .image {
+  max-width: 216px;
+  height: 149px;
+  margin: 10%;
+
+}
+
 
 .section-2 {
   background: #000;
-  /* width: 100%; */
-  height: 80vh;
+  width: 70%;
+  height: 83vh;
   position: relative;
 }
 
@@ -64,7 +120,6 @@
   left: 50%;
   transform: translate(-90%, -50%);
   max-width:40%;
-  /*margin:auto;*/
 }
 
 .section-2 .form .form-control {
@@ -76,64 +131,68 @@
   color: #ffffff;
   font-family: Roboto;
   font-style: Regular;
-  font-size: 1.4rem;
+  font-size: 2.5vmin;
   line-height: 28.13px;
-  margin-bottom: 10px;
+  margin-top: 2vmin;
 }
 
 .section-2 .form .form-control input {
   background: rgba(196, 196, 196, 0.44);
   color: #beb2b2;
   border-radius: 5px;
-  font-size: 1.4rem;
+  font-size: 2.5vmin;
   border: none;
   outline: none;
-  /* width: 46em; */
   margin-inline: auto;
-  padding: 15px;
-   width: 200%; 
+  padding: 8px;
+  width: 200%; 
+  margin-top: 3vmin;
 }
 
 .section-2 .form .button {
   border: none;
-  font-size: 1.4rem;
+  font-size: 2.5vmin;
   font-style: normal;
   font-weight: 700;
-  line-height: 28px;
+  line-height: 100%;
   font-family: Roboto;
   color: #ffffff;
   padding: 10px;
   margin: 10px;
   text-align: center;
+  margin-bottom: 3vmin;
   border-radius: 15px;
 }
 .section-2 .form .buttonparent{
   display:flex;
   flex-direction: column;
   align-items: center;
-  transform:translateX(30%);
+  transform:translateX(25%);
+
 }
 .section-2 .form .buttonparent .buttons {
-  /* display: flex;
-  flex-direction: column; */
-  /*margin:auto;*/
+  flex-direction: row;
   margin-top: 30px;
 }
 
 .section-2 .form .buttonparent .buttons .signin {
+  
   background: #f64114;
-  /* width: 15em; */
+  cursor:pointer;
 }
 
 .section-2 .form .buttons .signup {
+  
   border: 1px solid #ffffff;
   border-radius: 15px;
-  /* width: 15em; */
+  width:246px;
+  max-width: 35vw;
+  cursor:pointer;
 }
 
 .section-2 .form .or {
   font-family: Roboto;
-  font-size: 1.4rem;
+  font-size: 2.5vmin;
   font-style: normal;
   font-weight: 500;
   line-height: 28px;
@@ -143,11 +202,12 @@
 .section-2 .form .google {
   border: 1px solid #ffffff;
   width: 332px;
-
+  cursor:pointer;
+  max-width: 35vw;
 }
 
 .section-2 .form .google img {
-  width: 30px;
+  width: 10%;
   border-radius: 50%;
   vertical-align: middle;
   margin-right: 10px;
@@ -157,30 +217,3 @@
   color: white;
 }
 
-.section-1 {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-}
-
-.section-1 .content {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.section-1 .content .text {
-  font-family: Roboto;
-  font-size: 2.1rem;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 42px;
-  text-align: left;
-  width: 351px;
-}
-
-.section-1 .content .image {
-  width: 216px;
-  height: 149px;
-}
