@@ -25,7 +25,7 @@ const HomeMain = () => {
   const { scrollYProgress } = useViewportScroll();
   const dogY = useTransform(scrollYProgress, [0, 0.03], ["20%", "0%"]);
 
-  const dogOpacity = useTransform(scrollYProgress, [0, 0.05], [0, 1]);
+  const dogOpacity = useTransform(scrollYProgress, [0, 0.03], [0, 1]);
   return (
     <div>
       <section className="m-0 px-15 lg:pl-32 lg:pr-16 w-full">
