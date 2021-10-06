@@ -23,13 +23,9 @@ const HomeMain = () => {
   });
 
   const { scrollYProgress } = useViewportScroll();
-  const dogY = useTransform(
-    scrollYProgress,
-    [0, 0.05, 0.1],
-    ["25%", "15%", "0%"]
-  );
+  const dogY = useTransform(scrollYProgress, [0, 0.03], ["20%", "0%"]);
 
-  const dogOpacity = useTransform(scrollYProgress, [0, 0.05, 0.1], [0, 0.5, 1]);
+  const dogOpacity = useTransform(scrollYProgress, [0, 0.05], [0, 1]);
   return (
     <div>
       <section className="m-0 px-15 lg:pl-32 lg:pr-16 w-full">
@@ -38,7 +34,7 @@ const HomeMain = () => {
           style={{ zIndex: "-1" }}
           src="/Assets/images/homepageVector.png"
         />
-        <div className="justify-center align-center py-16">
+        <div className="justify-center align-center md:py-16">
           <div className="w-full home-main flex flex-col-reverse justify-between lg:flex-row items-center ">
             <div className="left lg:w-1/2 p-5 max-w-lg">
               <div className=" flex flex-col lg:flex-row">
@@ -88,7 +84,7 @@ const HomeMain = () => {
           </div>
         </div>
       </section>
-      <div>
+      <div ref={pawsElementRef} className="h-24 md:h-52">
         <motion.img
           variants={{
             hidden: {
@@ -102,11 +98,11 @@ const HomeMain = () => {
               },
             },
           }}
-          ref={pawsElementRef}
           initial="hidden"
           animate={controls}
           src="/Assets/images/paws.png"
           alt="paws"
+          className="h-full"
         />
       </div>
     </div>
