@@ -9,7 +9,7 @@ const Login = ({setLogin}) => {
      <div class="absolute bg-black opacity-80 inset-0 z-0"></div>
         <div class="w-full  max-w-7xl p-5 relative mx-auto my-auto rounded-xl shadow-lg  ">
           
-          <div class="">
+          <div class="loginmain">
            <div className="cancelparent">
            <button className="cancel" onClick={() => {setLogin(false)}}>&times;</button>
            </div>
@@ -28,15 +28,15 @@ const Login = ({setLogin}) => {
             <form class="form">
               <div class="form-control">
                 <label for="email">Email</label>
-                <input 
-                  type="text"
+                <input class="loginp"
+                  type="text" required
                   id="email"
                   placeholder="example.mail@yourmail.com"
                 ></input>
               </div>
               <div class="form-control">
                 <label for="password">Password</label>
-                <input type="password" id="password" placeholder="Password"></input>
+                <input class="loginp" type="password" required id="password" placeholder="Password"></input>
               </div>
               <div className="buttonparent">
                 <div class="buttons">
