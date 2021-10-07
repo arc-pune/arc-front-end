@@ -1,0 +1,313 @@
+/* Mobile first */
+.petDetail__background{
+    background: #FAAF4F;
+    width:100%;
+    height:14rem;
+}
+.petailDetail__cross{
+    margin: 1.2rem auto auto 1rem;
+    background: rgba(255, 255, 255, 0.5);
+border-radius: 29px;
+height:2rem;
+
+width: 2rem;
+}
+.petailDetail__cross img{
+height:0.9rem;
+justify-content: center;
+align-items: center;
+margin: auto;
+}
+.petDetail___petImage img{
+    height:15rem;
+    width:15rem;
+    align-items:center;
+    justify-content: center;
+    margin:-7rem auto auto auto;
+object-fit:cover;
+    border-radius: 1rem;
+}
+.petDetail__info{
+    margin:3rem ;
+    justify-content: center;
+    text-align: left;
+}
+
+
+.petDetail__infoHeader h2, .petDetail__infoBody h2{
+    font-family: Roboto;
+font-style: normal;
+margin: 0.7rem auto;
+font-weight: 700;
+font-size: 24px;
+line-height: 28px;
+
+color: #000000;
+}
+.petDetail__infoHeader p,.petDetail__infoBody  p{
+    font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 19px;
+margin:0.3rem auto;
+color: #000000;
+}
+
+.petDetail__infoBody  h2{
+    margin: 0.9rem auto;
+}
+.petDetail__infoBody  p{
+    text-align: left; 
+}
+
+
+.petDetail___adoptMe{
+    
+    margin: 4rem auto;
+background: #F64114;
+width: 14rem;
+height: 3rem;
+color:white;
+border-radius: 15px;
+align-items:center;
+justify-content: center;
+}
+
+@media only screen and (min-width: 350px) {
+
+    .petDetail___adoptMe{
+    
+        margin: 4rem auto;
+    background: #F64114;
+    width: 16.5rem;
+    height: 3rem;
+    color:white;
+    border-radius: 15px;
+    align-items:center;
+    justify-content: center;
+    }
+
+}
+@media only screen and (min-width: 400px) {
+
+    .petDetail___adoptMe{
+    
+        margin: 4rem auto;
+    background: #F64114;
+    width: 16.5rem;
+    height: 3rem;
+    color:white;
+    border-radius: 15px;
+    align-items:center;
+    justify-content: center;
+    }
+
+    .petailDetail__cross{
+         
+        height:2.7rem;
+        border-radius: 45px;
+        width: 2.7rem;
+        }
+        .petailDetail__cross img{
+            height:1.3rem;
+
+            justify-content: center;
+            align-items: center;
+            margin: auto;
+            }
+
+}
+@media only screen and (min-width: 600px) {
+    .petailDetail__cross{
+         
+        height:2.7rem;
+        border-radius: 45px;
+        width: 2.7rem;
+        }
+        .petailDetail__cross img{
+            height:1.3rem;
+
+            justify-content: center;
+            align-items: center;
+            margin: auto;
+            }
+
+}
+
+/* desktop (600PX) */
+@media only screen and (min-width: 800px) {
+
+    .petDetail__background{
+        background: #FAAF4F;
+        height:100%;
+        width:16rem;
+        position: absolute;
+        top:0;
+        left:0;
+        
+    }
+    .petDetail__main{
+        position: absolute;
+        display:grid;
+        left: 2%;
+        top:25%;
+        justify-content: center;
+        grid-template-columns: 1.7fr 2fr;
+    }
+
+    .petDetail___petImage img{
+        height:20rem;
+        width:20rem;
+        align-items:center;
+        justify-content: center;
+        margin:5% auto;
+    object-fit:cover;
+        border-radius: 1rem;
+    }
+    .petDetail__infoHeader h2, .petDetail__infoBody h2{
+     
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 30px;
+        
+    
+        }
+        .petDetail__infoHeader p,.petDetail__infoBody  p{
+          
+        font-size: 20px;
+        line-height: 24px;
+       
+        }
+        .petailDetail__cross{
+         
+        height:3rem;
+        border-radius: 45px;
+        width: 3rem;
+        }
+        .petailDetail__cross img{
+            height:1.5rem;
+
+            justify-content: center;
+            align-items: center;
+            margin: auto;
+            }
+            .petDetail___adoptMe{
+    
+              font-size: 1.2rem;
+            }
+        
+}
+
+@media only screen and (min-width: 1100px) {
+
+    .petDetail__background{
+        background: #FAAF4F;
+        height:110vh;
+        width:23rem;
+        position: absolute;
+        top:0;
+        left:0;
+        
+    }
+    .petailDetail__cross{
+         
+        height:2.7rem;
+        border-radius: 45px;
+        width: 2.7rem;
+        }
+        .petailDetail__cross img{
+            height:1rem;
+
+            justify-content: center;
+            align-items: center;
+            margin: auto;
+            }
+
+    .petDetail__infoHeader h2, .petDetail__infoBody h2{
+     
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 35px;
+        
+    
+        }
+        .petDetail__infoHeader p,.petDetail__infoBody  p{
+          
+        font-size: 24px;
+        line-height: 27px;
+       
+        }
+
+}
+@media only screen and (min-width: 1800px) {
+    .petDetail__background{
+        background: #FAAF4F;
+        height:100%;
+        width:40rem;
+   
+        
+    }
+    .petDetail___petImage img{
+        height:36rem;
+        width:36rem;
+     
+    }
+
+}
+@media only screen and (min-width: 1900px) {
+
+    .petDetail__background{
+        background: #FAAF4F;
+        height:110vh;
+        width:38rem;
+        position: absolute;
+        top:0;
+        left:0;
+        
+    }
+    .petDetail___petImage img{
+        height:28rem;
+        width:28rem;
+     
+    }
+
+    
+    
+    .petDetail__infoHeader h2, .petDetail__infoBody h2{
+     
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 45px;
+    
+
+    }
+    .petDetail__infoHeader p,.petDetail__infoBody  p{
+      
+    font-size: 32px;
+    line-height: 34px;
+   
+    }
+    
+    .petDetail__infoBody  h2{
+        margin: 0.9rem auto;
+    }
+    .petDetail__infoBody  p{
+        margin: 0.4rem auto;
+        text-align: left; 
+    }
+    
+    
+    .petDetail___adoptMe{
+        
+        margin: 4rem auto;
+    background: #F64114;
+    width: 25rem;
+    height: 6rem;
+    font-size: 2rem;
+   
+    }
+}
+
+
+
