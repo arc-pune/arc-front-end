@@ -14,6 +14,7 @@ We believe in coexistence and work for reducing human-animal conflicts.
   - [Raising Hands For Injured Paws](#raising-hands-for-injured-paws)
   - [Contents](#contents)
 - [Stack](#stack)
+- [Figma Design](#figma)
 - [Setup Guide](#setup-guide)
 - [Contributing Guide](#contributing-guide)
 - [Community](#community)
@@ -28,6 +29,11 @@ We believe in coexistence and work for reducing human-animal conflicts.
 | Component Library    | tailwindcss , material-ui        | 
 | Backend     | Nodejs , expressjs |
 | Database     |  MongoDB |
+
+# Figma
+ ⏺
+[Figma Design](https://www.figma.com/file/BqzGoxY6C9eHFbqa2EPpZE/Untitled?node-id=0%3A1)
+Check design folder for the png of the same..
 
 [![NPM](https://img.shields.io/static/v1?label=npm&message=7.23&color=blue)](https://shields.io/)
 [![NODE](https://img.shields.io/static/v1?label=node&message=14.17.6&color=success)](https://shields.io/)
