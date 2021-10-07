@@ -4,6 +4,7 @@ import { Disclosure, Menu, Transition } from "@headlessui/react";
 import { BellIcon, MenuIcon, XIcon } from "@heroicons/react/outline";
 import { Link } from "react-router-dom";
 import Login from "../pages/login";
+import PaletteThemeChanger from "./PaletteThemeChanger";
 
 const navigation = [
   { name: "Home", href: "/", current: false },
@@ -16,7 +17,7 @@ function classNames(...classes) {
 }
 
 export default function Example() {
-  const [login , setLogin] = useState(false);
+  const [login, setLogin] = useState(false);
   return (
     <Disclosure as="nav" className="pt-2">
       {({ open }) => (
@@ -25,7 +26,7 @@ export default function Example() {
             <div className="relative flex items-center justify-between h-16">
               <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
                 {/* Mobile menu button*/}
-                <Disclosure.Button className="inline-flex items-center justify-center p-2 text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
+                <Disclosure.Button className="inline-flex items-center justify-center p-2 text-gray-400 dark:text-gray-200 hover:text-white dark:hover:text-gray-900 hover:bg-gray-700 dark:hover:bg-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white dark:focus:ring-gray-900">
                   <span className="sr-only">Open main menu</span>
                   {open ? (
                     <XIcon className="block h-6 w-6" aria-hidden="true" />
@@ -57,8 +58,8 @@ export default function Example() {
                         to={item.href}
                         className={classNames(
                           item.current
-                            ? "text-black border-b-2 border-black hover:bg-gray-100"
-                            : "text-gray-900",
+                            ? "text-black dark:text-white border-b-2 border-black dark:border-white hover:bg-gray-100 dark:hover:bg-gray-700"
+                            : "text-gray-900 dark:text-gray-100",
                           "px-7 py-2 text-lg font-medium"
                         )}
                         aria-current={item.current ? "page" : undefined}
@@ -83,11 +84,13 @@ export default function Example() {
                 </div>
 
                 <div class="p-2 w-full">
-                  <button class="flex font-medium text-white bg-blue-600 border-0 py-2 px-8 focus:outline-none rounded-lg text-lg hover:bg-blue-500">
+                  <button class="flex font-medium text-white dark:text-black dark:bg-white bg-black border-0 py-2 px-8 focus:outline-none rounded-lg text-lg hover:bg-gray-800 dark:hover:bg-gray-100">
                     SignUp
                   </button>
                 </div>
-
+                <div class="p-2 w-full">
+                  <PaletteThemeChanger />
+                </div>
                 {/* Profile dropdown */}
                 {/* <Menu as='div' className='ml-3 relative'>
                   <div>
