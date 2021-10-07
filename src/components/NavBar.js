@@ -1,5 +1,5 @@
 /* This example requires Tailwind CSS v2.0+ */
-import { Fragment , useState } from "react";
+import React, { Fragment, useState } from "react";
 import { Disclosure, Menu, Transition } from "@headlessui/react";
 import { BellIcon, MenuIcon, XIcon } from "@heroicons/react/outline";
 import { Link } from "react-router-dom";
@@ -20,7 +20,7 @@ export default function Example() {
   return (
     <Disclosure as="nav" className="pt-2">
       {({ open }) => (
-        <>
+        <div>
           <div className="px-2 sm:px-6 lg:px-48">
             <div className="relative flex items-center justify-between h-16">
               <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
@@ -71,10 +71,15 @@ export default function Example() {
               </div>
               <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
                 <div class="p-2 w-full">
-                  <button onClick={ () => {setLogin(true)}} class="flex mx-auto border-0 font-medium py-2 px-8 focus:outline-none rounded-xl text-lg hover:underline">
+                  <button
+                    onClick={() => {
+                      setLogin(true);
+                    }}
+                    class="flex mx-auto border-0 font-medium py-2 px-8 focus:outline-none rounded-xl text-lg hover:underline"
+                  >
                     Login
                   </button>
-                  { login ? <Login setLogin={setLogin} /> : ""}
+                  {login ? <Login setLogin={setLogin} /> : ""}
                 </div>
 
                 <div class="p-2 w-full">
@@ -170,7 +175,7 @@ export default function Example() {
               ))}
             </div>
           </Disclosure.Panel>
-        </>
+        </div>
       )}
     </Disclosure>
   );
