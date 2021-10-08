@@ -97,7 +97,7 @@ You can edit files on your text-editor, changes will be reflected in your browse
 
 We also have public chat rooms on Discord. Feel free to connect!
 
-[![](https://img.shields.io/badge/chat-on_Discord-blue.svg?style=for-the-badge&logo=Discord)](https://discord.gg/CyDnCUEW)
+[![](https://img.shields.io/badge/chat-on_Discord-blue.svg?style=for-the-badge&logo=Discord)](https://discord.gg/MHfe9dJE)
 
 # Support
 

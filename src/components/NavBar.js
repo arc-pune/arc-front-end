@@ -1,7 +1,7 @@
 /* This example requires Tailwind CSS v2.0+ */
-import React, { Fragment, useState } from "react";
-import { Disclosure, Menu, Transition } from "@headlessui/react";
-import { BellIcon, MenuIcon, XIcon } from "@heroicons/react/outline";
+import React, {  useState } from "react";
+import { Disclosure,   } from "@headlessui/react";
+import {  MenuIcon, XIcon } from "@heroicons/react/outline";
 import { Link } from "react-router-dom";
 import Login from "../pages/login";
 import PaletteThemeChanger from "./PaletteThemeChanger";
@@ -38,12 +38,12 @@ export default function Example() {
               <a href='/'>
                 <div className='flex-shrink-0 flex items-center '>
                   <img
-                    className='block lg:hidden h-8 w-auto ml-14'
+                    className='block lg:hidden h-10 w-auto ml-14'
                     src='/Assets/icons/logo.svg'
                     alt='Workflow'
                   />
                   <img
-                    className='hidden lg:block h-8 w-auto'
+                    className='hidden lg:block h-10  w-auto'
                     src='/Assets/icons/logo.svg'
                     alt='Workflow'
                   />

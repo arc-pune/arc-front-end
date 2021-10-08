@@ -2,11 +2,11 @@ import React from "react";
 
 const Gallery = () => {
   return (
-    <div className='text-gray-400 h-1/2 body-font'>
+    <div className='text-gray-400 h-1/2 body-font mt-32'>
       <div className='container px-5 pb-2 mx-auto justify-center flex flex-wrap'>
         <div className='flex w-full mb-5 justify-center flex-wrap'>
-          <h1 className='sm:text-3xl text-2xl md:font-sans font-bold title-font text-black lg:w-1/3 lg:mb-0 mb-2'>
-            Some of the Adopted one's
+          <h1 className='sm:text-3xl text-2xl md:font-sans font-bold title-font text-black lg:w-1/3 lg:mb-0 mb-2 dark:text-white'>
+            Some of the Adopted ones
           </h1>
         </div>
         <div className='flex w-full mb-10 justify-center flex-wrap'>
