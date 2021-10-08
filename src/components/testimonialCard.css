@@ -1,0 +1,31 @@
+
+/* .mobile-width{
+    width:20rem;
+} */
+
+@media (max-width: 320px) { 
+.w-80{
+        width: 17rem;
+    }
+.px-16{
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+}
+
+@media (max-width: 767px) { 
+    .w-80{
+            width: 18rem;
+        }
+    .px-16{
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    
+    }
+
+.slick-prev:before,
+.slick-next:before {
+  color: black;
+}
