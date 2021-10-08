@@ -1,5 +1,71 @@
 
 /* mobile first */
+
+.aboutmain__background{
+    height: 23.5rem;
+width: 100%;
+position: absolute;
+top: 0;
+left: 0;
+z-index: -100;
+
+    background: #FAAF4F;
+}
+
+.aboutmain___ourOrganization {
+    margin:7.2rem auto auto auto;
+}
+
+.end{
+    position: relative;
+}
+.aboutmain___ourOrganization img{
+    align-items: center;
+justify-content: flex-start;
+height:2.8rem;
+    width: 2.8rem;
+}
+.end img{
+    align-items: center;
+    justify-content: flex-end;
+    height:2.8rem;
+        width: 2.8rem;
+        position: absolute;
+        margin-top: 1rem;
+        right:3%;
+}
+.aboutmain___ourOrganization h2{
+    justify-content: center;
+    align-items: center;
+    margin: auto ;
+    font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 1.7rem;
+line-height: 28px;
+text-align: center;
+color: #000000;
+    width:14rem;
+}
+.aboutmain___ourOrganizationMain{
+    margin: 1.5rem auto auto -0.8rem;
+    height: 100%;
+    width: 15.8rem;
+    padding: 1.5rem;
+    justify-content:center;
+background: rgba(255, 255, 255, 0.65);
+border: 1px solid #000000;
+box-sizing: border-box;
+box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.25);
+border-radius: 25px;
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 21px;
+text-align: justify;
+}
+/* our main contributors section */
 .ourMainContributor__header{
 
 position: relative;
@@ -30,10 +96,53 @@ height:4rem;
    
 }
 
+/* mobile (350px) */
 
+@media only screen and (min-width: 350px) {
+  
+.aboutmain___ourOrganizationMain{
+margin: 2rem auto ;
+width: 100%;
+padding: 1.5rem;
+}
+}
+/* tablet 600 */
 
 
 @media only screen and (min-width: 600px) {
+
+
+    .aboutmain___ourOrganization img{
+        
+        height:4.2rem;
+            width: 4.2rem;
+    }
+    .end img{
+        height:4.2rem;
+        width: 4.2rem;
+        }
+        
+    .aboutmain___ourOrganization h2{
+    
+    font-size: 2rem;
+    line-height: 32px;
+    text-align: center;
+   
+        width:100%;
+    }
+  
+        .aboutmain___ourOrganizationMain{
+        margin: 2rem auto ;
+        width: 70%;
+        padding: 2rem;
+        font-size: 26px;
+line-height: 29px;
+        }
+        
+
+
+
+    /* contributor */
     .ourMainContributor__header img{
         position: absolute;
        
@@ -56,6 +165,31 @@ height:4rem;
             line-height: 18px;
        
     }
+    
+}
+@media screen and (min-width:866px){
+    .aboutmain___ourOrganization img,  .end img{
+   
+        height:5.2rem;
+            width: 5.2rem;
+        }
+    .aboutmain___ourOrganization h2{
+    
+        font-size: 2.7rem;
+        line-height: 38px;
+        text-align: center;
+       
+            width:100%;
+        }
+      
+            .aboutmain___ourOrganizationMain{
+            margin: 2rem auto ;
+            width: 75%;
+            padding: 2.4rem;
+            font-size: 28px;
+    line-height: 34px;
+            }
+            
     
 }
 
