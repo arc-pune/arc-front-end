@@ -6,17 +6,14 @@ import Gallery from "../components/Gallery";
 import { TestimonialsMain } from "../components/TestimonialsMain";
 import FounderWord from "../components/FounderWord";
 
-
-
-
 const Home = () => {
   return (
     <div>
       <NavBar />
       <HomeMain />
       <Gallery />
-      <TestimonialsMain/>
-      <FounderWord/>
+      <TestimonialsMain />
+      <FounderWord />
       <Footer />
     </div>
   );
