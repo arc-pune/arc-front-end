@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" href="https://i.imgur.com/qF7LzZ3.jpg" />
+    <link rel="icon" href="/Assets/icons/logo.svg" />
     <!-- <link rel="icon" href="https://i.imgur.com/Vl6iiKB.jpg" /> -->
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
@@ -22,8 +22,20 @@
     -->
     <title>ARC-PUNE</title>
   </head>
-  <body>
+  <body class="text-black dark:text-white dark:bg-black">
     <noscript>You need to enable JavaScript to run this app.</noscript>
+    <script>
+      //Automactically Detects Change in theme in every 100ms
+      setInterval(function () {
+        const themes = JSON.parse(localStorage.themes);
+        for (const theme of themes) {
+          if (theme != localStorage.theme) {
+            document.documentElement.classList.remove(theme);
+          }
+        }
+        document.documentElement.classList.add(localStorage.theme);
+      }, 1000);
+    </script>
     <div id="root"></div>
     <!--
       This HTML file is a template.

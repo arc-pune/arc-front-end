@@ -10,15 +10,47 @@ We believe in coexistence and work for reducing human-animal conflicts.
 
 ## Contents
 
-- [Clone this repository](#clone-this-repository)
-- [Contribution Guide](#contribution-guide)
-- [Installation Guide](#installation-guide)
+- [ARC(Animal Rescue Community)](#arcanimal-rescue-community)
+  - [Raising Hands For Injured Paws](#raising-hands-for-injured-paws)
+  - [Contents](#contents)
+- [Stack](#stack)
+- [Figma Design](#figma)
+- [Setup Guide](#setup-guide)
+- [Contributing Guide](#contributing-guide)
 - [Community](#community)
 - [Support](#support)
 - [License](#license)
-- [Primary Maintainers](#primary-maintainers)
+- [Primary maintainers](#primary-maintainers)
 
-## Clone this repository
+# Stack
+| Stack    | Technology |
+| ---      | ---       |
+| Frontend | React.js         |
+| Component Library    | tailwindcss , material-ui        | 
+| Backend     | Nodejs , expressjs |
+| Database     |  MongoDB |
+
+# Figma
+ ⏺
+[Figma Design](https://www.figma.com/file/BqzGoxY6C9eHFbqa2EPpZE/Untitled?node-id=0%3A1)
+Check design folder for the png of the same..
+
+[![NPM](https://img.shields.io/static/v1?label=npm&message=7.23&color=blue)](https://shields.io/)
+[![NODE](https://img.shields.io/static/v1?label=node&message=14.17.6&color=success)](https://shields.io/)
+[![License](https://img.shields.io/badge/license-MIT-green.svg)](https://shields.io/)
+
+
+# Setup Guide
+
+Basic requirements
+``` 
+ Install Node version 14 or higher
+```
+
+- Fork this repository into your own GitHub account.
+- Clone the repo from your GitHub account to your local machine using the following commands
+
+- you can either  use ssh or https
 
 ```bash
 using https:
@@ -32,42 +64,50 @@ $ git clone git@github.com:arc-pune/arc-front-end.git
 $ cd arc-front-end
 ```
 
-Make sure to create your branch
+- Creating  branch  
+``` bash 
+git branch  your-branch-name
+git checkout your-branch-name
+```
+To run the development server, do the following in the `arc-frontend` directory:
 
-## Contribution Guide
-
-See [`CONTRIBUTING.md`](CONTRIBUTING.md) for more information on contributing to ARC.
-
-## Installation Guide
-
-1. Install Node version 14 or higher
-
-To run the development server, do the following in the `arc-front-end` directory:
-
+## Non-Docker Version
 ```bash
 $ npm install
-$ npm run dev
+$ npm start
+```
+It might take a while until craco is up and running.
+
+## Docker Version
+
+```bash
+$ npm run install && npm dockerize
 ```
 
 You can now see the project running on your localhost
 
 You can edit files on your text-editor, changes will be reflected in your browser.
 
-## Community
+# Contributing Guide
+
+- Go to `Contributing.md`
+
+
+# Community
 
 We also have public chat rooms on Discord. Feel free to connect!
 
 [![](https://img.shields.io/badge/chat-on_Discord-blue.svg?style=for-the-badge&logo=Discord)](https://discord.gg/CyDnCUEW)
 
-## Support
+# Support
 
 If you have any feature requests or bug reports, please log them on the [issue tracker](https://github.com/arc-pune/arc-front-end/issues/new).
 
-## License
+# License
 
 This project is licensed under the [MIT License](LICENSE).
 
-## Primary maintainers
+# Primary maintainers
 
 [Anand](https://github.com/AnandDhakane01)
 
