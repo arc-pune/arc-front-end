@@ -28,21 +28,21 @@ const HomeMain = () => {
   const dogOpacity = useTransform(scrollYProgress, [0, 0.05], [0, 1]);
   return (
     <div>
-      <section className="m-0 px-15 lg:pl-32 lg:pr-16 w-full">
-        <div className="justify-center align-center md:py-16">
-          <div className="w-full home-main flex flex-col-reverse justify-between lg:flex-row items-center ">
-            <div className="left lg:w-1/2 p-5 max-w-lg">
-              <div className=" flex flex-col lg:flex-row">
-                <div className="w-9/12">
-                  <h2 className="text-4xl font-bold lg:mb-8">
+      <section className='m-0 px-15 lg:pl-32 lg:pr-16 w-full'>
+        <div className='justify-center align-center md:py-16'>
+          <div className='w-full home-main flex flex-col-reverse justify-between lg:flex-row items-center '>
+            <div className='left lg:w-1/2 p-5 max-w-lg'>
+              <div className=' flex flex-col lg:flex-row'>
+                <div className='w-9/12'>
+                  <h2 className='text-4xl font-bold lg:mb-8'>
                     Raising Hands For Injured Paws
                   </h2>
                 </div>
-                <div className="self-center w-3/12 flex justify-center align-center">
+                <div className='self-center w-3/12 flex justify-center align-center'>
                   <img
                     style={{ height: "max-content" }}
-                    src="/Assets/images/pawPrints.png"
-                    alt="paws"
+                    src='/Assets/images/pawPrints.png'
+                    alt='paws'
                   />
                 </div>
               </div>
@@ -62,30 +62,30 @@ const HomeMain = () => {
                 <strong>ARC</strong> has recently started working in Nanded,
                 being the first ever animal welfare organization in the city.
               </p>
-              <div class="w-full pt-8">
-                <button class="flex justify-center font-bold text-white dark:text-black dark:bg-white border-0 py-3 px-10 focus:outline-none rounded-lg text-lg hover:bg-gray-800 dark:hover:bg-gray-100">
+              <div className='w-full pt-8'>
+                <button className='flex justify-center font-bold text-white dark:text-black dark:bg-white border-0 py-3 px-10 focus:outline-none rounded-lg text-lg hover:bg-gray-800 dark:hover:bg-gray-100'>
                   Help them
                 </button>
               </div>
             </div>
             <img
-              className="w-9/12 max-h-screen lg:h-full lg:w-1/2 absolute top-0 right-0"
+              className='w-9/12 max-h-screen lg:h-full lg:w-1/2 absolute top-0 right-0'
               style={{ zIndex: -1 }}
-              src="/Assets/images/homepageVector.png"
-              alt="homevector"
+              src='/Assets/images/homepageVector.png'
+              alt='homevector'
             />
-            <div className="right flex justify-end w-10/12 lg:5/12 pb-20 lg:p-0">
+            <div className='right flex justify-end w-10/12 lg:5/12 pb-20 lg:p-0'>
               <motion.img
                 style={{ y: dogY, opacity: dogOpacity }}
-                src="/Assets/images/homepageDog.png"
-                alt="Dog"
-                className="w-7/12 h-auto lg:1/2"
+                src='/Assets/images/homepageDog.png'
+                alt='Dog'
+                className='w-7/12 h-auto lg:1/2'
               />
             </div>
           </div>
         </div>
       </section>
-      <div ref={pawsElementRef} className="h-24 md:h-52">
+      <div ref={pawsElementRef} className='h-24 md:h-52'>
         <motion.img
           variants={{
             hidden: {
@@ -99,11 +99,11 @@ const HomeMain = () => {
               },
             },
           }}
-          initial="hidden"
+          initial='hidden'
           animate={controls}
-          src="/Assets/images/paws.png"
-          alt="paws"
-          className="h-full"
+          src='/Assets/images/paws.png'
+          alt='paws'
+          className='h-full'
         />
       </div>
     </div>
