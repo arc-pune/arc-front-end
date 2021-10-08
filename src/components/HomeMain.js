@@ -72,6 +72,7 @@ const HomeMain = () => {
               className="w-9/12 max-h-screen lg:h-full lg:w-1/2 absolute top-0 right-0"
               style={{ zIndex: -1 }}
               src="/Assets/images/homepageVector.png"
+              alt="homevector"
             />
             <div className="right flex justify-end w-10/12 lg:5/12 pb-20 lg:p-0">
               <motion.img
