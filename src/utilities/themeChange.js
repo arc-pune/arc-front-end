@@ -6,4 +6,13 @@ export function initTheme() {
 
 export function setTheme(theme) {
   localStorage.theme = theme;
+  updateTheme();
+}
+
+export function updateTheme() {
+  if (localStorage.theme === "dark") {
+    document.documentElement.classList.add('dark')
+  } else {
+    document.documentElement.classList.remove('dark')
+  }
 }
