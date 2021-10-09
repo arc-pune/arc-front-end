@@ -1,5 +1,5 @@
 import React from "react";
-import "./founderCard.css";
+import "../styles/founderCard.css";
 export const FounderCard = () => {
   return (
     <div className='mx-auto my-0 relative'>
