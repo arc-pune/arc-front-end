@@ -5,6 +5,7 @@ import {  MenuIcon, XIcon } from "@heroicons/react/outline";
 import { Link } from "react-router-dom";
 import Login from "../pages/login";
 import PaletteThemeChanger from "./PaletteThemeChanger";
+import Sample from "../pages/sp";
 
 const navigation = [
   { name: "Home", href: "/", current: false },
@@ -80,7 +81,7 @@ export default function Example() {
                   >
                     Login
                   </button>
-                  {login ? <Login setLogin={setLogin} /> : ""}
+                  {login ? <Sample setLogin={setLogin} /> : ""}
                 </div>
 
                 <div className='p-2 w-full'>
