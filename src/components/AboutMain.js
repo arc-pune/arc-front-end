@@ -1,7 +1,7 @@
 import React from "react";
 import { FounderCard } from "./FonderCard";
 import MainContributor from "./MainContributorCard";
-import "./aboutMain.css";
+import "../styles/aboutMain.css";
 const AboutMain = () => {
   return (
     <>

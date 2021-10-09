@@ -38,12 +38,12 @@ export default function Example() {
               <a href='/'>
                 <div className='flex-shrink-0 flex items-center '>
                   <img
-                    className='block lg:hidden h-10 w-auto ml-14'
+                    className='block lg:hidden h-8 w-auto ml-14'
                     src='/Assets/icons/logo.svg'
                     alt='Workflow'
                   />
                   <img
-                    className='hidden lg:block h-10  w-auto'
+                    className='hidden lg:block h-8  w-auto'
                     src='/Assets/icons/logo.svg'
                     alt='Workflow'
                   />

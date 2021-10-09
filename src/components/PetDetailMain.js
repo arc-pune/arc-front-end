@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-import "./petDetailMain.css";
+import "../styles/petDetailMain.css";
 const PetDetailMain = () => {
   return (
     <div h-full>

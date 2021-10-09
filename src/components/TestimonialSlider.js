@@ -3,7 +3,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import TestimonialCard from "./TestimonialCard";
-import "./testimonialCard.css";
+import "../styles/testimonialCard.css";
 
 
 export default class Responsive extends Component {
