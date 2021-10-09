@@ -4,206 +4,22 @@
     box-sizing: border-box;
 }
 
-.cancel {
-    font-size: 40px;
-    margin-top: -2em;
-    float: right;
-    color: white;
-}
-.login {
-    display: flex;
-    flex-direction: row;
-    position: relative;
-}
-
-@media only screen and (max-width: 500px) {
-    .login {
-        flex-direction: column;
-        /*top: 50%;
-    left:50%;*/
-        transform: translate(15%, 5%);
-        max-height: 80vh;
-        width: 100vw;
-    }
-    .section-1 {
-        position: relative;
-        min-height: 120px;
-        max-height: 25vh;
-        min-width: 60vw;
-        max-width: 61vw;
-        /*display:flex;
-    flex-direction: column;*/
-    }
-    .section-2 {
-        /*width: 50%;*/
-        max-width: 60vw;
-        max-height: 60vmax;
-    }
-    .form-control {
-        max-height: 7vh;
-    }
-    .buttonparent {
-        margin-top: -5vmin;
-    }
-    .section-1 .content .image {
-        position: absolute;
-        width: 50%;
-        max-height: 60%;
-        /*top:-150%;*/
-        left: 15%;
-        transform: translateY(-25vmin);
-        /*margin: 10%;*/
-    }
-    .section-1 .content .text {
-        position: absolute;
-        transform: translateY(3vmin);
-        left: 0%;
-    }
-}
-
-.section-1 {
-    background: #faaf4f;
-    height: 83vh;
-    padding: 20px;
-    width: 45%;
-    max-width: 400px;
+.loginSignup{
     display: flex;
     flex-direction: column;
-    position: relative;
+   
 }
-
-.section-1 .content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 90%;
-}
-
-.section-1 .content .text {
-    font-family: Roboto;
-    font-size: 3.5vmin;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 5.5vmin;
-    text-align: left;
-    width: 100%;
-    text-align: center;
-}
-
-.section-1 .content .image {
-    max-width: 216px;
-    height: 149px;
-    margin: 10%;
-}
-
-.section-2 {
-    background: #000;
-    width: 70%;
-    height: 83vh;
-    position: relative;
-}
-
-.section-2 .form {
-    display: flex;
-    flex-direction: column;
+.loginSignup *{
     justify-content: center;
-    align-items: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-90%, -50%);
-    max-width: 40%;
+    margin:0.5em auto;
 }
+@media (min-width: 70em) {
+    .loginSignup{
+        flex-direction: row;
 
-.section-2 .form .form-control {
-    margin-bottom: 20px;
-}
-
-.section-2 .form .form-control label {
-    display: block;
-    color: #ffffff;
-    font-family: Roboto;
-    font-style: Regular;
-    font-size: 2.5vmin;
-    line-height: 28.13px;
-    margin-top: 2vmin;
-}
-
-.section-2 .form .form-control input {
-    background: rgba(196, 196, 196, 0.44);
-    color: #beb2b2;
-    border-radius: 5px;
-    font-size: 2.5vmin;
-    border: none;
-    outline: none;
-    margin-inline: auto;
-    padding: 8px;
-    width: 200%;
-    margin-top: 3vmin;
-}
-
-.section-2 .form .button {
-    border: none;
-    font-size: 2.5vmin;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 100%;
-    font-family: Roboto;
-    color: #ffffff;
-    padding: 10px;
-    margin: 10px;
-    text-align: center;
-    margin-bottom: 3vmin;
-    border-radius: 15px;
-}
-.section-2 .form .buttonparent {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    transform: translateX(25%);
-}
-.section-2 .form .buttonparent .buttons {
-    flex-direction: row;
-    margin-top: 30px;
-}
-
-.section-2 .form .buttonparent .buttons .signin {
-    background: #f64114;
-    cursor: pointer;
-}
-
-.section-2 .form .buttons .signup {
-    border: 1px solid #ffffff;
-    border-radius: 15px;
-    width: 246px;
-    max-width: 35vw;
-    cursor: pointer;
-}
-
-.section-2 .form .or {
-    font-family: Roboto;
-    font-size: 2.5vmin;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 28px;
-    color: #ffffff;
-}
-
-.section-2 .form .google {
-    border: 1px solid #ffffff;
-    width: 332px;
-    cursor: pointer;
-    max-width: 35vw;
-}
-
-.section-2 .form .google img {
-    width: 10%;
-    border-radius: 50%;
-    vertical-align: middle;
-    margin-right: 10px;
-}
-
-.section-2 .form .google p {
-    color: white;
+    }
+    .loginSignup *{
+        margin:2em 2em;
+    }
+   
 }
