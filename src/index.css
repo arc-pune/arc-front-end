@@ -3,6 +3,7 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 section {
     padding: 0 2em;
