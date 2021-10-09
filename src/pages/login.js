@@ -59,22 +59,22 @@ const Login = ({ setLogin }) => {
                   class="w-full bg-gray-100 rounded-md  lg:my-5 border mb-5  bg-opacity-50 border-gray-300 focus:ring-2 focus:ring-indigo-200 focus:bg-transparent focus:border-indigo-500 text-base outline-none text-black dark:text-white py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                 />
                 <div className="loginSignup">
-                  <button class="bg-transparent text-sm lg:my-5 text-center bg-red-500 hover:bg-red-700 md-4 w-4/5 p-auto text-white font-semibold py-2 border border-red-400 rounded">
+                  <button class="bg-transparent text-sm lg:my-5 text-center bg-red-500 hover:bg-red-700 md-4 w-4/5 p-auto text-white font-semibold py-2 border border-red-400 rounded-lg">
                     Login
                   </button>
 
-                  <button class="bg-transparent text-sm text-center mx-auto w-4/5  p-auto font-semibold py-2  border border-black dark:border-white rounded">
+                  <button class="bg-transparent text-sm text-center mx-auto w-4/5  p-auto font-semibold py-2  border border-black dark:border-white rounded-lg">
                     New User? Sign up
                   </button>
                 </div>
 
-                <h2>OR</h2>
-                <button class="md:my-2 flex text-sm lg:my-5 mb-5 py-3 mx-auto text-center font-semibold px-4 border border-black dark:border-white rounded">
+                <h2 style={{marginBottom:"1vh"}}>OR</h2>
+                <button class="md:my-2 flex text-sm lg:my-5 mb-5 py-3 mx-auto text-center font-semibold px-4 border border-black dark:border-white rounded-lg">
                   <img
-                    src="/Assets/images/google.png"
+                    src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg"
                     alt="google"
                     className="my-auto mr-2"
-                    style={{height:"3vmin", width:"3vmin"}}
+                    style={{height:"2.5vmin", width:"2.5vmin"}}
                   />
                   Continue with Google
                 </button>
