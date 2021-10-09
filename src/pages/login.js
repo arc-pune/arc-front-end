@@ -4,11 +4,11 @@ import "../styles/login.css"
 const Login = ({ setLogin }) => {
   return (
     <div class="text-gray-600 body-font md:min-w-screen md:h-screen left-0 top-0 inset-0 z-50 fixed">
-      <div class="absolute bg-gray-900 opacity-80 inset-0 z-0"></div>
-      <div className="relative m-6 my-10 lg:px-20 py-5 lg:py-10 ">
+      <div class="absolute bg-gray-700 opacity-80 inset-0 z-0"></div>
+      <div className="relative m-6 my-10 lg:px-20 lg:py-10 " style={{marginTop:"2vh"}} >
         <div style={{maxWidth:"1100px"}} class="container md:min-w-5xl md:h-full  mx-auto justify-center flex flex-wrap sm:flex-nowrap ">
           <div
-            class="lg:max-w-lg lg:w-1/3 lg:p-auto sm:w-1/2 py-5 px-5 md:w-1/2 w-full "
+            class="lg:max-w-lg lg:w-1/3 lg:p-auto sm:w-1/2 py-2 px-5 md:w-1/2 w-full "
             style={{ backgroundColor: "#faaf4f" }}
           >
             <button
@@ -37,7 +37,7 @@ const Login = ({ setLogin }) => {
           </div>
           <div class="lg:flex-grow w-full lg:font-semibold md:w-3/4 px-5 flex flex-col items-center text-center text-black  bg-white dark:text-white dark:bg-black">
             <div class="relative flex w-full md:justify-center m-auto justify-center">
-              <div class="mx-5 md:w-full md:pt-25 lg:px-28 lg:py-10 pb-16 lg:w-full xl:w-full w-full items-center">
+              <div class="mx-5 md:w-full md:pt-25 lg:px-28 lg:py-10 py-5 lg:pb-16 lg:w-full xl:w-full w-full items-center">
                 <p for="hero-field" class="leading-7 text-left text-sm">
                   Email
                 </p>
@@ -59,17 +59,17 @@ const Login = ({ setLogin }) => {
                   class="w-full bg-gray-100 rounded-md  lg:my-5 border mb-5  bg-opacity-50 border-gray-300 focus:ring-2 focus:ring-indigo-200 focus:bg-transparent focus:border-indigo-500 text-base outline-none text-black dark:text-white py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                 />
                 <div className="loginSignup">
-                  <button class="bg-transparent lg:my-5 text-center bg-red-500 hover:bg-red-700 md-4 w-4/5 p-auto text-white font-bold py-2 border border-red-400 rounded">
+                  <button class="bg-transparent text-sm lg:my-5 text-center bg-red-500 hover:bg-red-700 md-4 w-4/5 p-auto text-white font-semibold py-2 border border-red-400 rounded">
                     Login
                   </button>
 
-                  <button class="bg-transparent text-center mx-auto w-4/5  p-auto font-bold py-2  border border-black dark:border-white rounded">
+                  <button class="bg-transparent text-sm text-center mx-auto w-4/5  p-auto font-semibold py-2  border border-black dark:border-white rounded">
                     New User? Sign up
                   </button>
                 </div>
 
                 <h2>OR</h2>
-                <button class="md:my-2 flex lg:my-5 mb-5 py-3 mx-auto text-center font-bold px-4 border border-black dark:border-white rounded">
+                <button class="md:my-2 flex text-sm lg:my-5 mb-5 py-3 mx-auto text-center font-semibold px-4 border border-black dark:border-white rounded">
                   <img
                     src="/Assets/images/google.png"
                     alt="google"
