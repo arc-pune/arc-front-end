@@ -50,10 +50,11 @@ const Gallery = () => {
         />
       </div> */}
       <img
-                alt="gallery"
-                class="w-1/10 object-cover h-full -mt-24 -ml-20 object-center block"
-                src="/Assets/images/dogbaba.gif"
-              />
+          alt="gallery"
+          class="w-1/10 object-cover h-full -mt-24 -ml-20 object-center block"
+          src="/Assets/images/dogbaba.gif"
+        />
+
         <div className="flex w-full mb-5 justify-center flex-wrap">
           <h1 className="sm:text-3xl text-2xl md:font-sans font-bold title-font text-white lg:w-1/3 lg:mb-0 mb-2">
             Some of the Adopted one's
