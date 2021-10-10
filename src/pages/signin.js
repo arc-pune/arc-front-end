@@ -5,7 +5,7 @@ import "../styles/login.css"
 const Signin = ({ setSignin }) => {
   const [ishead , setIshead ] = useState(true);
   const onHandlechange = () => {
-    if(window.innerWidth > 500){
+    if(window.innerWidth > 600){
       setIshead(true)
     }
     else {

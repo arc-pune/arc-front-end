@@ -1,62 +1,17 @@
 import React from "react";
-import { useRef, useCallback } from "react";
-import {
-  motion,
-  useViewportScroll,
-  useTransform,
-  useAnimation,
-} from "framer-motion";
 
 const Gallery = () => {
-  const controls = useAnimation();
-  const observer = useRef();
-  const pawsElementRef = useCallback((node) => {
-    if (observer.current) observer.current.disconnect();
-    observer.current = new IntersectionObserver((entries) => {
-      if (entries[0].isIntersecting) {
-        controls.start("visible");
-        console.log("on screen");
-      } else {
-        controls.start("hidden");
-      }
-    });
-    if (node) observer.current.observe(node);
-  });
-  
   return (
-
-    
-    <div className="text-gray-400 h-1/2 body-font ">
-      <div className="container px-5 py-24 mx-auto justify-center flex flex-wrap">
-      {/* <div ref={pawsElementRef} className='h-24 md:h-52'>
-        <motion.img
-          variants={{
-            hidden: {
-              x: -100,
-            },
-            visible: {
-              x: 0,
-              transition: {
-                delay: 0.3,
-                ease: "easeOut",
-              },
-            },
-          }}
-          initial='hidden'
-          animate={controls}
-          src='/Assets/images/paws.png'
-          alt='paws'
-          className='h-full'
-        />
-      </div> */}
-      <img
+    <div className="text-gray-400 h-1/2 mb-0 body-font ">
+      <div className="container px-5 py-10 mx-auto justify-center flex flex-wrap">
+        <img
           alt="gallery"
           class="w-1/10 object-cover h-full -mt-24 -ml-20 object-center block"
           src="/Assets/images/dogbaba.gif"
         />
 
         <div className="flex w-full mb-5 justify-center flex-wrap">
-          <h1 className="sm:text-3xl text-2xl md:font-sans font-bold title-font text-white lg:w-1/3 lg:mb-0 mb-2">
+          <h1 className="sm:text-3xl text-2xl md:font-sans font-bold title-font text-black dark:text-white lg:w-1/3 lg:mb-0 mb-2">
             Some of the Adopted one's
           </h1>
         </div>
@@ -140,7 +95,6 @@ const Gallery = () => {
         </div>
       </div>
     </div>
-    
   );
 };
 
