@@ -203,7 +203,17 @@ justify-content: center;
 }
 
 @media only screen and (min-width: 1100px) {
-
+    .petDetail___adoptMe{
+    
+        margin: 4rem auto;
+    background: #F64114;
+    width: 12rem;
+    height: 3rem;
+    color:white;
+    border-radius: 15px;
+    align-items:center;
+    justify-content: center;
+    }
     .petDetail__background{
         background: #FAAF4F;
         height:110vh;
@@ -301,15 +311,8 @@ justify-content: center;
     }
     
     
-    .petDetail___adoptMe{
-        
-        margin: 4rem auto;
-    background: #F64114;
-    width: 25rem;
-    height: 6rem;
-    font-size: 2rem;
    
-    }
+    
 }
 
 

@@ -52,6 +52,30 @@ export const AdoptMain = () => {
       description:
         "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text",
     },
+    {
+      _id: "0007",
+      image:
+        "https://images.pexels.com/photos/8985189/pexels-photo-8985189.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      location: "TWTR",
+      description:
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text",
+    },
+    {
+      _id: "0008",
+      image:
+        "https://images.pexels.com/photos/7210704/pexels-photo-7210704.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      location: "TWTR",
+      description:
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text",
+    },
+    {
+      _id: "0009",
+      image:
+        "https://images.pexels.com/photos/4411430/pexels-photo-4411430.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      location: "TWTR",
+      description:
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text",
+    },
   ];
 
   return (
@@ -63,6 +87,7 @@ export const AdoptMain = () => {
         <img src="/Assets/icons/paws.svg" alt="paws" />
         <h2>Our Friends Up for Adoption</h2>
       </div>
+
       <div className="adoptmain___body">
         {PetData?.map((pet) => (
           <div className="" key={pet._id}>
@@ -74,7 +99,11 @@ export const AdoptMain = () => {
             />
           </div>
         ))}
+        <div className="apdotmain__pawPrint">
+          <img src="/Assets/icons/paws.svg" alt="paws" />
+        </div>
       </div>
+
       <div className="paws_2">
         <img src="/Assets/images/paws.png" alt="" />
       </div>
