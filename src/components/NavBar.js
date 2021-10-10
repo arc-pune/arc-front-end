@@ -4,6 +4,7 @@ import { Disclosure,   } from "@headlessui/react";
 import {  MenuIcon, XIcon } from "@heroicons/react/outline";
 import { Link } from "react-router-dom";
 import Login from "../pages/login";
+import Signin from "../pages/signin";
 import PaletteThemeChanger from "./PaletteThemeChanger";
 
 const navigation = [
@@ -18,6 +19,7 @@ function classNames(...classes) {
 
 export default function Example() {
   const [login, setLogin] = useState(false);
+  const [signin , setSignin] = useState(false);
   return (
     <Disclosure as='nav' className='pt-2'>
       {({ open }) => (
@@ -84,9 +86,14 @@ export default function Example() {
                 </div>
 
                 <div className='p-2 w-full'>
-                  <button className='flex font-medium text-white dark:text-black dark:bg-white bg-black border-0 py-2 px-8 focus:outline-none rounded-lg text-lg hover:bg-gray-800 dark:hover:bg-gray-100'>
+                  <button 
+                  onClick={() => {
+                      setSignin(true);
+                    }}
+                    className='flex font-medium text-white dark:text-black dark:bg-white bg-black border-0 py-2 px-8 focus:outline-none rounded-lg text-lg hover:bg-gray-800 dark:hover:bg-gray-100'>
                     SignUp
                   </button>
+                  {signin ? <Signin setSignin={setSignin} /> : ""}
                 </div>
                 <div className='p-2 w-full'>
                   <PaletteThemeChanger />
