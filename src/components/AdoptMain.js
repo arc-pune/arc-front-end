@@ -1,9 +1,8 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import { useParams } from "react-router-dom";
-import "../styles/petDetailMain.css";
-const PetDetailMain = () => {
-  let { id } = useParams();
+import { PetCards } from "./PetCards";
+import "../styles/adoptMain.css";
+
+export const AdoptMain = () => {
   const PetData = [
     {
       _id: "0000",
@@ -55,35 +54,30 @@ const PetDetailMain = () => {
     },
   ];
 
-  const petD = PetData.filter((pet) => pet._id === id);
-
   return (
-    <div h-full>
-      <div className="petDetail__background">
-        <button className="petailDetail__cross">
-          <Link to="/adopt">
-            <img src="/Assets/icons/cross.svg" alt="cross" />
-          </Link>
-        </button>
+    <div className="adoptMain">
+      <div className="paws_1">
+        <img src="/Assets/images/paws.png" alt="" />
       </div>
-      <div className="petDetail__main">
-        <div className="petDetail___petImage">
-          <img src={petD[0]?.image} alt="petImage" />
-        </div>
-        <div className="petDetail__info">
-          <div className="petDetail__infoHeader">
-            <h2>Location</h2>
-            <p>{petD[0]?.location}</p>
+      <div className="apdotmain__header">
+        <img src="/Assets/icons/paws.svg" alt="paws" />
+        <h2>Our Friends Up for Adoption</h2>
+      </div>
+      <div className="adoptmain___body">
+        {PetData?.map((pet) => (
+          <div className="" key={pet._id}>
+            <PetCards
+              id={pet._id}
+              image={pet.image}
+              location={pet.location}
+              description={pet.description}
+            />
           </div>
-          <div className="petDetail__infoBody">
-            <h2>Description</h2>
-            <p>{petD[0]?.description}</p>
-          </div>
-          <button className="petDetail___adoptMe">Adopt me</button>
-        </div>
+        ))}
+      </div>
+      <div className="paws_2">
+        <img src="/Assets/images/paws.png" alt="" />
       </div>
     </div>
   );
 };
-
-export default PetDetailMain;

@@ -1,0 +1,97 @@
+.apdotmain__header {
+    margin:2.5rem auto auto auto;
+}
+
+.apdotmain__header img{
+    align-items: center;
+justify-content: flex-start;
+margin-left: 0.5rem;
+height:2.8rem;
+    width: 2.8rem;
+}
+.apdotmain__header h2{
+    justify-content: center;
+    align-items: center;
+    margin: auto ;
+
+    font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 1.3rem;
+line-height: 28px;
+text-align: center;
+color: #000000;
+    width:100%;
+}
+.paws_1{
+    display: none;
+}
+.paws_2 ,.pawprints__decoration{
+    display:none;
+}
+.adoptMain{
+    position: relative;
+}
+@media only screen and (min-width: 590px) {
+    
+.apdotmain__header img{
+ position: absolute;
+ top:20%;
+ left:45%;
+ height: 3.4rem;
+ width: 3.4rem;
+}
+
+    .adoptmain___body{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .apdotmain__header h2{
+   
+    font-size: 1.8rem;
+    line-height: 34px;
+
+ 
+    }
+    .paws_1{
+        display: block;
+        position: absolute;
+        top: 10%;
+        left: 0;
+        height: 10%;
+        width: 10%;
+     
+    }
+    .paws_2{
+        display: block;
+        position: absolute;
+        bottom: 0;
+        transform: rotate(180deg);
+        right: 0;
+        height: 10%;
+        width: 10%;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    .adoptmain___body{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin: 2rem;
+    }
+    .apdotmain__header h2{
+   
+        font-size: 2rem;
+        line-height: 38px;
+    
+     
+        }
+        .apdotmain__header img{
+            position: absolute;
+            top:50%;
+            left:45%;
+            height: 3.4rem;
+            width: 3.4rem;
+           }
+        
+}

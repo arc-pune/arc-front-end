@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import About from "./pages/About";
 import PetDetailMain from "./components/PetDetailMain";
 import { updateTheme } from "./utilities/themeChange";
+import { Adopt } from "./pages/Adopt";
 
 const App = () => {
   updateTheme();
@@ -17,6 +18,9 @@ const App = () => {
           </Route>
           <Route exact path="/about">
             <About />
+          </Route>
+          <Route exact path="/adopt">
+            <Adopt />
           </Route>
           <Route exact path="/petdetail/:id">
             <PetDetailMain />
