@@ -7,7 +7,7 @@
 .loginSignup{
     display: flex;
     flex-direction: column;
-   
+    
 }
 .loginSignup *{
     justify-content: center;
@@ -16,10 +16,9 @@
 @media (min-width: 70em) {
     .loginSignup{
         flex-direction: row;
-
     }
     .loginSignup *{
-        margin:2em 2em;
+        margin:1em 2em;
     }
    
 }
