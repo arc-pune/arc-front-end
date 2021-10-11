@@ -53,6 +53,30 @@ const PetDetailMain = () => {
       description:
         "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text",
     },
+    {
+      _id: "0007",
+      image:
+        "https://images.pexels.com/photos/8985189/pexels-photo-8985189.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      location: "TWTR",
+      description:
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text",
+    },
+    {
+      _id: "0008",
+      image:
+        "https://images.pexels.com/photos/7210704/pexels-photo-7210704.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      location: "TWTR",
+      description:
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text",
+    },
+    {
+      _id: "0009",
+      image:
+        "https://images.pexels.com/photos/4411430/pexels-photo-4411430.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      location: "TWTR",
+      description:
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text",
+    },
   ];
 
   const petD = PetData.filter((pet) => pet._id === id);

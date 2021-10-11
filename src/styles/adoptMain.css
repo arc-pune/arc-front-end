@@ -26,13 +26,14 @@ color: #000000;
 .paws_1{
     display: none;
 }
-.paws_2 ,.pawprints__decoration{
+.paws_2 ,.apdotmain__pawPrint{
     display:none;
 }
 .adoptMain{
     position: relative;
 }
 @media only screen and (min-width: 590px) {
+
     
 .apdotmain__header img{
  position: absolute;
@@ -74,6 +75,9 @@ color: #000000;
 }
 
 @media only screen and (min-width: 900px) {
+    .adoptMain{
+        min-height:100vh;
+    }
     .adoptmain___body{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
@@ -88,10 +92,21 @@ color: #000000;
         }
         .apdotmain__header img{
             position: absolute;
-            top:50%;
-            left:45%;
+            top:30%;
+            left:65%;
             height: 3.4rem;
             width: 3.4rem;
            }
-        
+        .apdotmain__pawPrint{
+            position:relative;
+            display:block;
+        }
+           .apdotmain__pawPrint img{
+            position: absolute;
+          bottom:10%;
+            left:95%;
+            
+            height: 3.4rem;
+            width: 3.4rem;
+           }
 }

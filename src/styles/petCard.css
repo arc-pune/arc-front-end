@@ -57,6 +57,57 @@ color: #000000;
 
   }
   
-  @media only screen and (min-width: 900px) {
-   
+  @media only screen and (min-width: 1000px) {
+    .petcard{
+      width:18.5rem;
+      margin:4rem auto;
+    
+      border-radius: 25px ;
+      height: 24rem;
+    
+    }
+    .petcard__petImg img{
+    width:18.5rem;
+    height: 15.5rem;
+    
+    object-fit: cover;
+    border-radius: 25px 25px 0px 0px;
+    }
+    .petcard__main{
+    margin:   auto;
+      padding:1.7rem 0.5rem;
+      height:50%;
+      background: #FAAF4F;
+    border-radius:0 0 25px 25px;
+    }
+    .petcard__header{
+      display: grid;
+      align-items: center;
+     width: 100%;
+     margin:auto;
+     margin-left: 0.8rem;
+      grid-template-columns: 0.2fr 1.2fr;
+      justify-content: center;
+      font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 19px;
+    line-height: 21px;
+    }
+    .petcard__Body{
+     justify-content: center;
+     align-items: center;
+     margin: auto;
+     padding: 1rem 1rem ;
+    }
+    .petcard__Body p{
+      font-family: Roboto;
+    font-style: italic;
+    font-weight: 300;
+    font-size: 17px;
+    text-align: justify;
+    line-height: 19px;
+    
+    color: #000000;
+    }
   }

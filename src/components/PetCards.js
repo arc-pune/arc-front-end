@@ -15,6 +15,7 @@ export const PetCards = (props) => {
             <h2>{props.location}</h2>
           </div>
           <div className="petcard__Body">
+            {/* <p> {props.id}</p> */}
             <p>{props.description}</p>
           </div>
         </div>
