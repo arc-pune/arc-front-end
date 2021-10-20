@@ -5,6 +5,7 @@ import About from "./pages/About";
 import PetDetailMain from "./components/PetDetailMain";
 import { updateTheme } from "./utilities/themeChange";
 import { Adopt } from "./pages/Adopt";
+import Profile from "./pages/Profile";
 
 const App = () => {
   updateTheme();
@@ -24,6 +25,9 @@ const App = () => {
           </Route>
           <Route exact path="/petdetail/:id">
             <PetDetailMain />
+          </Route>
+          <Route exact path="/profile">
+            <Profile />
           </Route>
         </Switch>
       </Router>
