@@ -80,6 +80,7 @@ const HomeMain = () => {
             />
             <div className='right flex justify-end w-10/12 lg:5/12 pb-20 lg:p-0'>
               <motion.img
+                initial={{ opacity: 1}}
                 style={{ y: dogY, opacity: dogOpacity }}
                 src='/Assets/images/homepageDog.png'
                 alt='Dog'
