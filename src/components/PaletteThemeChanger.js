@@ -2,7 +2,8 @@ import React, { useState } from "react";
 import { SunIcon, MoonIcon } from "@heroicons/react/outline";
 import {
   updateLocalStorageTheme,
-  defaultTheme
+  defaultTheme,
+  themeEnum
 } from "../utilities/themeChange";
 
 const PaletteThemeChanger = () => {
@@ -12,10 +13,10 @@ const PaletteThemeChanger = () => {
   });
 
   const toggleTheme = () => {
-    let nextTheme = "dark";
+    let nextTheme = themeEnum.dark;
 
-    if (theme === "dark") {
-      nextTheme = "light";
+    if (theme === themeEnum.dark) {
+      nextTheme = themeEnum.light;
       updateLocalStorageTheme(nextTheme);
       setTheme(nextTheme);
       return;
@@ -32,7 +33,7 @@ const PaletteThemeChanger = () => {
           className="focus:outline-none dark:text-gray-100 text-black"
           onClick={toggleTheme}
         >
-          {theme === "light" ? (
+          {theme === themeEnum.light ? (
             <MoonIcon className="block h-6 w-6" aria-hidden />
           ) : (
             <SunIcon className="block h-6 w-6" aria-hidden />
