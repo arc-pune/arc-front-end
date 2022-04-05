@@ -56,7 +56,7 @@ const Gallery = () => {
         />
 
         <div className="flex w-full mb-5 justify-center flex-wrap">
-          <h1 className="sm:text-3xl text-2xl md:font-sans font-bold title-font text-white lg:w-1/3 lg:mb-0 mb-2">
+          <h1 className="sm:text-3xl text-2xl md:font-sans font-bold title-font text-black dark:text-white lg:w-1/3 lg:mb-0 mb-2">
             Some of the Adopted one's
           </h1>
         </div>
