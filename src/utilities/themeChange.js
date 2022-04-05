@@ -1,21 +1,20 @@
-const defaultTheme = "light";
+export const defaultTheme = "light";
+export const themeKey = "theme";
 
 export function initTheme() {
-  const currentTheme = localStorage.getItem("theme");
+  const currentTheme = localStorage.getItem(themeKey) ?? defaultTheme;
 
-  if (!currentTheme) {
-    localStorage.setItem("theme", defaultTheme);
-  }
+  localStorage.setItem(themeKey, currentTheme);
 
-  updateTheme();
+  updateDocumentTheme();
 }
 
-export function setTheme(theme) {
-  localStorage.setItem("theme", theme);
-  updateTheme();
+export function updateLocalStorageTheme(theme) {
+  localStorage.setItem(themeKey, theme);
+  updateDocumentTheme();
 }
-export function updateTheme() {
-  const currentTheme = localStorage.getItem("theme");
+export function updateDocumentTheme() {
+  const currentTheme = localStorage.getItem(themeKey);
 
   if (currentTheme === "dark") {
     document.documentElement.classList.add("dark");
