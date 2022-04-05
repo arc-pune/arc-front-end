@@ -1,17 +1,27 @@
-export function  initTheme() {
-  const themes = ["dark", "light", "neon"];
-  localStorage.themes = JSON.stringify(themes);
-  localStorage.theme = "light";
+const defaultTheme = "light";
+
+export function initTheme() {
+  const currentTheme = localStorage.getItem("theme");
+
+  if (!currentTheme) {
+    localStorage.setItem("theme", defaultTheme);
+  }
+
+  updateTheme();
 }
 
 export function setTheme(theme) {
-  localStorage.theme = theme;
+  localStorage.setItem("theme", theme);
   updateTheme();
 }
 export function updateTheme() {
-  if (localStorage.theme === "dark") {
+  const currentTheme = localStorage.getItem("theme");
+
+  if (currentTheme === "dark") {
     document.documentElement.classList.add("dark");
-  } else {
+  }
+
+  if (currentTheme === "light") {
     document.documentElement.classList.remove("dark");
   }
 }

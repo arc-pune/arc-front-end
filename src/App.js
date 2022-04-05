@@ -1,14 +1,14 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Home from "./pages/Home";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import About from "./pages/About";
 import PetDetailMain from "./components/PetDetailMain";
-import { updateTheme } from "./utilities/themeChange";
+import { initTheme } from "./utilities/themeChange";
 import { Adopt } from "./pages/Adopt";
 import Profile from "./pages/Profile";
 
 const App = () => {
-  updateTheme();
+  useEffect(initTheme, []);
 
   return (
     <div>
