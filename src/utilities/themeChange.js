@@ -1,17 +1,27 @@
-export function  initTheme() {
-  const themes = ["dark", "light", "neon"];
-  localStorage.themes = JSON.stringify(themes);
-  localStorage.theme = "light";
+import { createEnum } from "./createEnum";
+
+export const themeKey = "theme";
+
+export const themeEnum = createEnum(["dark", "light"]);
+export const defaultTheme = themeEnum.light;
+
+export function initTheme() {
+  const currentTheme = localStorage.getItem(themeKey) ?? defaultTheme;
+  localStorage.setItem(themeKey, currentTheme);
+  updateDocumentTheme();
 }
 
-export function setTheme(theme) {
-  localStorage.theme = theme;
-  updateTheme();
+export function updateLocalStorageTheme(theme) {
+  localStorage.setItem(themeKey, theme);
+  updateDocumentTheme();
 }
-export function updateTheme() {
-  if (localStorage.theme === "dark") {
-    document.documentElement.classList.add("dark");
+
+export function updateDocumentTheme() {
+  const currentTheme = localStorage.getItem(themeKey);
+
+  if (currentTheme === themeEnum.dark) {
+    document.documentElement.classList.add(themeEnum.dark);
   } else {
-    document.documentElement.classList.remove("dark");
+    document.documentElement.classList.remove(themeEnum.dark);
   }
 }

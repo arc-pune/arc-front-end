@@ -1,37 +1,47 @@
-import React from "react";
-import { setTheme } from "../utilities/themeChange";
+import React, { useState } from "react";
+import { SunIcon, MoonIcon } from "@heroicons/react/outline";
+import {
+  updateLocalStorageTheme,
+  defaultTheme,
+  themeEnum
+} from "../utilities/themeChange";
 
-function toggleTheme() {
-  if (localStorage.theme === "dark") setTheme("light");
-  else setTheme("dark");
-}
+const PaletteThemeChanger = () => {
+  const [theme, setTheme] = useState(() => {
+    const currentTheme = localStorage.getItem("theme");
+    return currentTheme ?? defaultTheme;
+  });
 
-function PaletteThemeChanger() {
+  const toggleTheme = () => {
+    let nextTheme = themeEnum.dark;
+
+    if (theme === themeEnum.dark) {
+      nextTheme = themeEnum.light;
+      updateLocalStorageTheme(nextTheme);
+      setTheme(nextTheme);
+      return;
+    }
+
+    updateLocalStorageTheme(nextTheme);
+    setTheme(nextTheme);
+  };
+
   return (
     <>
       <div>
         <button
-          className='focus:outline-none dark:text-gray-100 text-black'
+          className="focus:outline-none dark:text-gray-100 text-black"
           onClick={toggleTheme}
         >
-          <svg
-            xmlns='http://www.w3.org/2000/svg'
-            className='h-6 w-6 dark:text-gray-100 text-black'
-            fill='none'
-            viewBox='0 0 24 24'
-            stroke='currentColor'
-          >
-            <path
-              strokeLinecap='round'
-              strokeLinejoin='round'
-              strokeWidth='2'
-              d='M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01'
-            />
-          </svg>
+          {theme === themeEnum.light ? (
+            <MoonIcon className="block h-6 w-6" aria-hidden />
+          ) : (
+            <SunIcon className="block h-6 w-6" aria-hidden />
+          )}
         </button>
       </div>
     </>
   );
-}
+};
 
 export default PaletteThemeChanger;
